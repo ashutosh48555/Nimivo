@@ -2,7 +2,8 @@ import { useState, useCallback } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '@/store/authStore';
 import { SignedIn, SignedOut, UserButton, useClerk } from '@clerk/clerk-react';
-import { Menu, X, Zap, LogOut, ChevronDown, MapPin, Search } from 'lucide-react';
+import { Menu, X, Zap, LogOut, ChevronDown, Search } from 'lucide-react';
+import LocationPicker from '@/components/shared/LocationPicker';
 import { cn } from '@/lib/utils';
 
 export default function Header() {
@@ -62,11 +63,7 @@ export default function Header() {
 
           {/* Central Search Bar (Desktop) */}
           <div className="hidden md:flex items-center flex-1 max-w-2xl mx-8 gap-4">
-            <div className="flex items-center gap-2 px-4 py-2.5 bg-slate-100 rounded-lg text-sm text-slate-600 w-48 hover:bg-slate-200 transition-colors cursor-pointer group">
-              <MapPin className="w-4 h-4 text-slate-400 group-hover:text-fp-orange-500 transition-colors" />
-              <span className="truncate">New Delhi, India</span>
-              <ChevronDown className="w-4 h-4 ml-auto text-slate-400" />
-            </div>
+            <LocationPicker />
 
             <div className="flex-1 relative group">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
