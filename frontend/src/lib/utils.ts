@@ -56,26 +56,32 @@ export function getServiceCategoryColor(category: string): string {
 
 export function getStatusColor(status: string): { text: string; bg: string } {
   const colors: Record<string, { text: string; bg: string }> = {
-    pending: { text: '#F59E0B', bg: '#FEF3C7' },
-    assigned: { text: '#3B82F6', bg: '#DBEAFE' },
-    in_transit: { text: '#8B5CF6', bg: '#EDE9FE' },
-    arrived: { text: '#06B6D4', bg: '#CFFAFE' },
-    in_progress: { text: '#6366F1', bg: '#E0E7FF' },
-    completed: { text: '#10B981', bg: '#D1FAE5' },
-    cancelled: { text: '#EF4444', bg: '#FEE2E2' },
+    pending: { text: 'text-amber-600', bg: 'bg-amber-50' },
+    confirmed: { text: 'text-blue-600', bg: 'bg-blue-50' },
+    assigned: { text: 'text-blue-600', bg: 'bg-blue-50' },
+    en_route: { text: 'text-violet-600', bg: 'bg-violet-50' },
+    in_transit: { text: 'text-violet-600', bg: 'bg-violet-50' },
+    arrived: { text: 'text-cyan-600', bg: 'bg-cyan-50' },
+    in_progress: { text: 'text-indigo-600', bg: 'bg-indigo-50' },
+    completed: { text: 'text-green-600', bg: 'bg-green-50' },
+    cancelled: { text: 'text-red-600', bg: 'bg-red-50' },
+    no_show: { text: 'text-slate-600', bg: 'bg-slate-100' },
   };
-  return colors[status] || { text: '#64748B', bg: '#F1F5F9' };
+  return colors[status] || { text: 'text-slate-600', bg: 'bg-slate-100' };
 }
 
 export function getStatusLabel(status: string): string {
   const labels: Record<string, string> = {
     pending: 'Pending',
+    confirmed: 'Confirmed',
     assigned: 'Assigned',
+    en_route: 'On the Way',
     in_transit: 'On the Way',
     arrived: 'Arrived',
     in_progress: 'In Progress',
     completed: 'Completed',
     cancelled: 'Cancelled',
+    no_show: 'No Show',
   };
   return labels[status] || status;
 }

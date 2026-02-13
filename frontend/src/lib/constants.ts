@@ -224,3 +224,67 @@ export const TRUST_BADGES = [
   'Transparent Pricing',
   'Money-Back Guarantee',
 ];
+
+// ─── Urban Company–Style Service Data ─────────────────────────────
+
+export interface ServiceItem {
+  id: string;
+  name: string;
+  image: string;
+  rating: number;
+  reviewCount: string;
+  price: number;
+  originalPrice?: number;
+  badge?: string;
+}
+
+export const MOST_BOOKED: ServiceItem[] = [
+  { id: 'mb-1', name: 'House Cleaning', image: 'https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=400&q=80', rating: 4.80, reviewCount: '2.3M', price: 99, originalPrice: 245, badge: 'Arrives in 10 min' },
+  { id: 'mb-2', name: 'Intense Bathroom Cleaning', image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=400&q=80', rating: 4.80, reviewCount: '4.4M', price: 419, originalPrice: 519 },
+  { id: 'mb-3', name: 'Full Home Deep Cleaning', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80', rating: 4.82, reviewCount: '4.4M', price: 838, originalPrice: 1038 },
+  { id: 'mb-4', name: 'Haircut for Men', image: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=400&q=80', rating: 4.87, reviewCount: '470K', price: 299 },
+  { id: 'mb-5', name: 'Geyser Check-up', image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=400&q=80', rating: 4.72, reviewCount: '112K', price: 249 },
+  { id: 'mb-6', name: 'AC Service & Repair', image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=400&q=80', rating: 4.77, reviewCount: '160K', price: 399 },
+];
+
+export const CLEANING_SERVICES: ServiceItem[] = [
+  { id: 'cl-1', name: 'Intense Bathroom Cleaning', image: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=400&q=80', rating: 4.80, reviewCount: '4.4M', price: 419, originalPrice: 519 },
+  { id: 'cl-2', name: 'Full Home Deep Cleaning', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80', rating: 4.82, reviewCount: '4.4M', price: 838, originalPrice: 1038 },
+  { id: 'cl-3', name: 'Kitchen Deep Cleaning', image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=400&q=80', rating: 4.84, reviewCount: '169K', price: 399 },
+  { id: 'cl-4', name: 'Fridge Cleaning', image: 'https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=400&q=80', rating: 4.83, reviewCount: '131K', price: 399 },
+  { id: 'cl-5', name: 'Sofa & Upholstery Cleaning', image: 'https://images.unsplash.com/photo-1555041469-a586c1ea9fe4?auto=format&fit=crop&w=400&q=80', rating: 4.79, reviewCount: '142K', price: 549 },
+];
+
+export const APPLIANCE_SERVICES: ServiceItem[] = [
+  { id: 'ap-1', name: 'AC Service & Repair', image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=400&q=80', rating: 4.77, reviewCount: '160K', price: 399 },
+  { id: 'ap-2', name: 'Geyser Check-up', image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=400&q=80', rating: 4.72, reviewCount: '112K', price: 249 },
+  { id: 'ap-3', name: 'Washing Machine Repair', image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=400&q=80', rating: 4.77, reviewCount: '354K', price: 199 },
+  { id: 'ap-4', name: 'TV Check-up & Repair', image: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=400&q=80', rating: 4.77, reviewCount: '160K', price: 249 },
+  { id: 'ap-5', name: 'Water Purifier Service', image: 'https://images.unsplash.com/photo-1564419320461-6c406adf6df7?auto=format&fit=crop&w=400&q=80', rating: 4.76, reviewCount: '82K', price: 599 },
+  { id: 'ap-6', name: 'Microwave Repair', image: 'https://images.unsplash.com/photo-1574269890498-1c38d073cb55?auto=format&fit=crop&w=400&q=80', rating: 4.75, reviewCount: '86K', price: 199 },
+];
+
+export const REPAIR_SERVICES: ServiceItem[] = [
+  { id: 'rp-1', name: 'Plumber Consultation', image: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=400&q=80', rating: 4.73, reviewCount: '109K', price: 49 },
+  { id: 'rp-2', name: 'Electrician Visit', image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400&q=80', rating: 4.75, reviewCount: '88K', price: 49 },
+  { id: 'rp-3', name: 'Carpenter Work', image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=400&q=80', rating: 4.83, reviewCount: '98K', price: 79 },
+  { id: 'rp-4', name: 'Decor Installation', image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=400&q=80', rating: 4.79, reviewCount: '95K', price: 129 },
+  { id: 'rp-5', name: 'Switchboard Repair', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?auto=format&fit=crop&w=400&q=80', rating: 4.83, reviewCount: '54K', price: 99 },
+  { id: 'rp-6', name: 'Door Lock Installation', image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=400&q=80', rating: 4.79, reviewCount: '95K', price: 129 },
+];
+
+export const SALON_MEN: ServiceItem[] = [
+  { id: 'sm-1', name: 'Haircut for Men', image: 'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=400&q=80', rating: 4.87, reviewCount: '470K', price: 299 },
+  { id: 'sm-2', name: 'Beard Trimming & Styling', image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=400&q=80', rating: 4.86, reviewCount: '140K', price: 249 },
+  { id: 'sm-3', name: 'Haircut for Kids', image: 'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=400&q=80', rating: 4.85, reviewCount: '105K', price: 299 },
+  { id: 'sm-4', name: 'Clean Shave', image: 'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=400&q=80', rating: 4.84, reviewCount: '69K', price: 249 },
+  { id: 'sm-5', name: 'Head, Neck & Shoulder Massage', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=400&q=80', rating: 4.82, reviewCount: '51K', price: 349 },
+];
+
+export const SALON_WOMEN: ServiceItem[] = [
+  { id: 'sw-1', name: 'Facial & Cleanup', image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=400&q=80', rating: 4.85, reviewCount: '520K', price: 599, originalPrice: 799 },
+  { id: 'sw-2', name: 'Hair Spa Treatment', image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=400&q=80', rating: 4.83, reviewCount: '380K', price: 899 },
+  { id: 'sw-3', name: 'Manicure & Pedicure', image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=400&q=80', rating: 4.81, reviewCount: '290K', price: 499 },
+  { id: 'sw-4', name: 'Full Body Waxing', image: 'https://images.unsplash.com/photo-1560066984-138daaa8c5e7?auto=format&fit=crop&w=400&q=80', rating: 4.80, reviewCount: '450K', price: 349 },
+  { id: 'sw-5', name: 'Bridal Makeup', image: 'https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=400&q=80', rating: 4.88, reviewCount: '89K', price: 4999 },
+];

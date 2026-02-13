@@ -42,7 +42,7 @@ export default function FAQ() {
                 <div
                   className={cn(
                     'overflow-hidden transition-all duration-200',
-                    isOpen ? 'max-h-48 pb-4' : 'max-h-0'
+                    isOpen ? 'max-h-96 pb-4' : 'max-h-0'
                   )}
                 >
                   <p className="px-6 text-sm text-slate-500 leading-relaxed">

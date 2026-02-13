@@ -7,10 +7,18 @@
   /* Brand Colors */
   --color-fp-blue-900: #1E3A8A;
   /* Dark Navy (Footer/Text) */
+  --color-fp-blue-800: #1E40AF;
+  /* Deep Blue */
   --color-fp-blue-700: #1D4ED8;
   /* Primary Blue (Brand) */
   --color-fp-blue-600: #2563EB;
   /* Vivid Blue (Active) */
+  --color-fp-blue-500: #3B82F6;
+  /* Mid Blue */
+  --color-fp-blue-200: #BFDBFE;
+  /* Light Blue Border */
+  --color-fp-blue-100: #DBEAFE;
+  /* Lighter Blue */
   --color-fp-blue-50: #EFF6FF;
   /* Light Blue Tint (Backgrounds) */
 
@@ -19,8 +27,14 @@
   /* Hover State */
   --color-fp-orange-500: #F97316;
   /* PRIMARY BUTTON / CTA */
+  --color-fp-orange-400: #FB923C;
+  /* Light Orange */
+  --color-fp-orange-200: #FED7AA;
+  /* Soft Peach */
   --color-fp-orange-100: #FFEDD5;
   /* Highlights */
+  --color-fp-orange-50: #FFF7ED;
+  /* Lightest Orange */
 
   /* Neutrals */
   --color-fp-slate-900: #0F172A;
@@ -87,7 +101,6 @@ h6 {
   font-family: var(--font-heading);
   letter-spacing: -0.02em;
   font-weight: 700;
-  color: var(--color-fp-blue-900);
 }
 
 /* Utility Class for "Glass" effect */
@@ -131,13 +144,13 @@ h6 {
   }
 
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-33.333%);
   }
 }
 
 @keyframes marquee-reverse {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(-33.333%);
   }
 
   100% {
@@ -157,4 +170,13 @@ h6 {
 ::-webkit-scrollbar-thumb {
   background: var(--color-fp-slate-500);
   border-radius: 4px;
+}
+
+/* Scrollbar Hide (for horizontal carousels) */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

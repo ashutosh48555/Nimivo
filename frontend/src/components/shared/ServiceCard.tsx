@@ -30,7 +30,7 @@ export default function ServiceCard({ service, className }: ServiceCardProps) {
         {/* Icon + Title */}
         <div className="flex items-start justify-between mb-3">
           <div>
-            <h3 className="text-lg font-semibold text-slate-900 group-hover:text-emerald-600 transition-colors">
+            <h3 className="text-lg font-semibold text-slate-900 group-hover:text-fp-blue-700 transition-colors">
               {service.name}
             </h3>
             <div className="flex items-center gap-1.5 mt-1 text-slate-400">
@@ -66,7 +66,7 @@ export default function ServiceCard({ service, className }: ServiceCardProps) {
               {formatPrice(service.basePrice)}
             </p>
           </div>
-          <span className="flex items-center gap-1 text-sm font-medium text-emerald-500 group-hover:gap-2 transition-all">
+          <span className="flex items-center gap-1 text-sm font-medium text-fp-orange-500 group-hover:gap-2 transition-all">
             Book Now
             <ArrowRight className="w-4 h-4" />
           </span>

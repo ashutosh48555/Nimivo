@@ -64,7 +64,7 @@ export default function Footer() {
                 <li key={item.label}>
                   <Link
                     to={item.href}
-                    className="text-sm text-slate-400 hover:text-emerald-400 transition-colors"
+                    className="text-sm text-slate-400 hover:text-fp-orange-500 transition-colors"
                   >
                     {item.label}
                   </Link>
@@ -96,10 +96,10 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-slate-500">
+          <p className="text-sm text-slate-400">
             &copy; {new Date().getFullYear()} FastPAYS. All rights reserved.
           </p>
-          <p className="text-xs text-slate-600">
+          <p className="text-xs text-slate-500">
             Built with ❤️ for India&apos;s fastest home services
           </p>
         </div>

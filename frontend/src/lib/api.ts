@@ -1,5 +1,11 @@
 import axios from 'axios';
 
+let authToken: string | null = null;
+
+export const setAuthToken = (token: string | null) => {
+  authToken = token;
+};
+
 const api = axios.create({
   baseURL: '/api',
   headers: { 'Content-Type': 'application/json' },
@@ -7,9 +13,8 @@ const api = axios.create({
 });
 
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem('fastpays_token');
-  if (token) {
-    config.headers.Authorization = `Bearer ${token}`;
+  if (authToken) {
+    config.headers.Authorization = `Bearer ${authToken}`;
   }
   return config;
 });
@@ -18,9 +23,8 @@ api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      localStorage.removeItem('fastpays_token');
-      localStorage.removeItem('fastpays_user');
-      window.location.href = '/login';
+      authToken = null;
+      window.location.href = '/access';
     }
     return Promise.reject(error);
   }

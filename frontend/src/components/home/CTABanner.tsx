@@ -18,19 +18,19 @@ export default function CTABanner() {
         <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight font-heading">
           Get professional help at your doorstep
           <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-fp-orange-400 to-fp-orange-200">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-fp-orange-400 to-fp-orange-100">
             in under 15 minutes
           </span>
         </h2>
 
-        <p className="mt-4 text-slate-400 max-w-xl mx-auto">
+        <p className="mt-4 text-slate-300 max-w-xl mx-auto">
           Join thousands of happy customers who rely on FastPAYS for quick,
           reliable home services. No subscription, no commitment — just fast help.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
           <Link
-            to="/register"
+            to="/access"
             className="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-white bg-fp-orange-500 hover:bg-fp-orange-600 rounded-full transition-all duration-300 shadow-lg shadow-fp-orange-500/25 hover:shadow-fp-orange-500/40 hover:-translate-y-1"
           >
             Create Free Account
@@ -38,7 +38,7 @@ export default function CTABanner() {
           </Link>
           <Link
             to="/book"
-            className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-medium text-fp-blue-100 hover:text-white border border-fp-blue-700 hover:border-fp-blue-500 rounded-full transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-medium text-fp-blue-50 hover:text-white border border-fp-blue-700 hover:border-fp-blue-600 rounded-full transition-colors"
           >
             Browse Services
           </Link>

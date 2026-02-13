@@ -95,7 +95,7 @@ export default function AdminDashboard() {
       label: 'Revenue',
       value: formatPrice(stats.totalRevenue),
       icon: TrendingUp,
-      color: 'text-emerald-500 bg-emerald-50',
+      color: 'text-fp-success bg-green-50',
     },
     {
       label: 'Users',
@@ -126,7 +126,7 @@ export default function AdminDashboard() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center min-h-[60vh]">
-        <div className="w-10 h-10 border-4 border-emerald-200 border-t-emerald-500 rounded-full animate-spin" />
+        <div className="w-10 h-10 border-4 border-fp-blue-200 border-t-fp-blue-600 rounded-full animate-spin" />
       </div>
     );
   }
@@ -146,7 +146,7 @@ export default function AdminDashboard() {
               onClick={() => setTab(t)}
               className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors capitalize ${
                 tab === t
-                  ? 'bg-emerald-500 text-white'
+                  ? 'bg-fp-blue-700 text-white'
                   : 'text-slate-600 hover:bg-slate-50'
               }`}
             >
@@ -254,7 +254,7 @@ export default function AdminDashboard() {
                   key={p.id}
                   className="bg-white rounded-xl border border-slate-100 p-5 flex items-center gap-4"
                 >
-                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center text-sm font-bold text-emerald-600">
+                  <div className="w-12 h-12 bg-fp-blue-50 rounded-full flex items-center justify-center text-sm font-bold text-fp-blue-700">
                     {p.user.fullName
                       .split(' ')
                       .map((n) => n[0])
@@ -266,7 +266,7 @@ export default function AdminDashboard() {
                         {p.user.fullName}
                       </p>
                       {p.isVerified && (
-                        <ShieldCheck className="w-4 h-4 text-emerald-500" />
+                        <ShieldCheck className="w-4 h-4 text-fp-success" />
                       )}
                     </div>
                     <p className="text-xs text-slate-400">
@@ -278,7 +278,7 @@ export default function AdminDashboard() {
                     <span
                       className={`px-2 py-0.5 text-xs rounded-full ${
                         p.isAvailable
-                          ? 'bg-emerald-50 text-emerald-700'
+                          ? 'bg-green-50 text-green-700'
                           : 'bg-slate-100 text-slate-500'
                       }`}
                     >

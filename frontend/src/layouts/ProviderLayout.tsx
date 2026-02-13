@@ -1,11 +1,11 @@
 import { Outlet, Link } from 'react-router-dom';
 import { LayoutDashboard, Briefcase, DollarSign, LogOut, Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { useAuthStore } from '@/store/authStore';
+import { useClerk } from '@clerk/clerk-react';
 
 export default function ProviderLayout() {
     const [sidebarOpen, setSidebarOpen] = useState(false);
-    const logout = useAuthStore((s) => s.logout);
+    const { signOut } = useClerk();
 
     const navItems = [
         { icon: LayoutDashboard, label: 'Dashboard', href: '/provider' },
@@ -36,7 +36,7 @@ export default function ProviderLayout() {
 
                 <div className="p-4 border-t border-fp-blue-700">
                     <button
-                        onClick={logout}
+                        onClick={() => signOut()}
                         className="flex items-center gap-3 px-4 py-3 w-full rounded-lg text-red-300 hover:bg-red-900/30 hover:text-red-200 transition-all"
                     >
                         <LogOut className="w-5 h-5" />
@@ -75,7 +75,7 @@ export default function ProviderLayout() {
                                     </Link>
                                 ))}
                                 <button
-                                    onClick={logout}
+                                    onClick={() => signOut()}
                                     className="flex items-center gap-3 px-4 py-3 w-full rounded-lg text-red-300 hover:bg-red-900/30 mt-8"
                                 >
                                     <LogOut className="w-5 h-5" />
