@@ -3,17 +3,17 @@ import { Zap, Phone, Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-fp-blue-900 text-white border-t border-fp-blue-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <div className="w-9 h-9 bg-emerald-500 rounded-lg flex items-center justify-center">
-                <Zap className="w-5 h-5 text-white" />
+              <div className="w-10 h-10 bg-fp-blue-700/50 backdrop-blur rounded-xl flex items-center justify-center border border-fp-blue-600">
+                <Zap className="w-6 h-6 text-fp-orange-500 fill-current" />
               </div>
-              <span className="text-xl font-bold">
-                Fast<span className="text-emerald-400">PAYS</span>
+              <span className="text-2xl font-bold font-heading">
+                Fast<span className="text-fp-orange-500">PAYS</span>
               </span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed">
@@ -39,7 +39,7 @@ export default function Footer() {
                 <li key={s}>
                   <Link
                     to="/book"
-                    className="text-sm text-slate-400 hover:text-emerald-400 transition-colors"
+                    className="text-sm text-slate-300 hover:text-fp-orange-500 transition-colors"
                   >
                     {s}
                   </Link>
@@ -80,15 +80,15 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-2.5 text-sm text-slate-400">
-                <Phone className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                <Phone className="w-4 h-4 text-fp-orange-500 flex-shrink-0" />
                 +91 98765 43210
               </li>
               <li className="flex items-center gap-2.5 text-sm text-slate-400">
-                <Mail className="w-4 h-4 text-emerald-400 flex-shrink-0" />
+                <Mail className="w-4 h-4 text-fp-orange-500 flex-shrink-0" />
                 support@fastpays.in
               </li>
               <li className="flex items-start gap-2.5 text-sm text-slate-400">
-                <MapPin className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-fp-orange-500 flex-shrink-0 mt-0.5" />
                 Mumbai, Maharashtra, India
               </li>
             </ul>

@@ -1,17 +1,18 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useEffect, lazy, Suspense } from 'react';
 import { useAuthStore } from '@/store/authStore';
-import Layout from '@/components/layout/Layout';
+import CustomerLayout from '@/layouts/CustomerLayout';
+import ProviderLayout from '@/layouts/ProviderLayout';
 import ToastContainer from '@/components/shared/ToastContainer';
 
 // Lazy-loaded pages
-const HomePage = lazy(() => import('@/pages/HomePage'));
-const LoginPage = lazy(() => import('@/pages/LoginPage'));
-const RegisterPage = lazy(() => import('@/pages/RegisterPage'));
-const BookingPage = lazy(() => import('@/pages/BookingPage'));
-const TrackingPage = lazy(() => import('@/pages/TrackingPage'));
-const HistoryPage = lazy(() => import('@/pages/HistoryPage'));
-const ProviderDashboard = lazy(() => import('@/pages/ProviderDashboard'));
+const HomePage = lazy(() => import('@/pages/customer/HomePage'));
+const LoginPage = lazy(() => import('@/pages/auth/LoginPage'));
+const RegisterPage = lazy(() => import('@/pages/auth/RegisterPage'));
+const BookingPage = lazy(() => import('@/pages/customer/BookingPage'));
+const TrackingPage = lazy(() => import('@/pages/customer/TrackingPage'));
+const HistoryPage = lazy(() => import('@/pages/customer/HistoryPage'));
+const ProviderDashboard = lazy(() => import('@/pages/provider/ProviderDashboard'));
 const AdminDashboard = lazy(() => import('@/pages/AdminDashboard'));
 
 function PageLoader() {
@@ -49,7 +50,8 @@ function App() {
     <>
       <Suspense fallback={<PageLoader />}>
         <Routes>
-          <Route element={<Layout />}>
+          {/* CUSTOMER PORTAL */}
+          <Route element={<CustomerLayout />}>
             <Route path="/" element={<HomePage />} />
 
             <Route
@@ -101,24 +103,25 @@ function App() {
                 </ProtectedRoute>
               }
             />
+          </Route>
 
-            <Route
-              path="/provider"
-              element={
-                <ProtectedRoute>
-                  <ProviderDashboard />
-                </ProtectedRoute>
-              }
-            />
+          {/* PROVIDER PORTAL */}
+          <Route path="/provider" element={
+            <ProtectedRoute>
+              <ProviderLayout />
+            </ProtectedRoute>
+          }>
+            <Route index element={<ProviderDashboard />} />
+            {/* Add more provider routes here later */}
+          </Route>
 
-            <Route
-              path="/admin"
-              element={
-                <ProtectedRoute>
-                  <AdminDashboard />
-                </ProtectedRoute>
-              }
-            />
+          {/* ADMIN PORTAL (Uses Provider Layout for now or create separate) */}
+          <Route path="/admin" element={
+            <ProtectedRoute>
+              <ProviderLayout />
+            </ProtectedRoute>
+          }>
+            <Route index element={<AdminDashboard />} />
           </Route>
 
           <Route path="*" element={<Navigate to="/" replace />} />

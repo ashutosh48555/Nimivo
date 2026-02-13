@@ -28,12 +28,12 @@ export default function HowItWorks() {
                 className="relative bg-white rounded-2xl p-8 border border-slate-100 text-center"
               >
                 {/* Step number */}
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center text-sm font-bold">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-fp-blue-700 text-white rounded-full flex items-center justify-center text-sm font-bold shadow-lg shadow-fp-blue-700/20">
                   {item.step}
                 </div>
 
-                <div className="w-14 h-14 mx-auto mb-5 bg-emerald-50 rounded-2xl flex items-center justify-center">
-                  <Icon className="w-7 h-7 text-emerald-500" />
+                <div className="w-14 h-14 mx-auto mb-5 bg-fp-blue-50 rounded-2xl flex items-center justify-center border border-fp-blue-100">
+                  <Icon className="w-7 h-7 text-fp-orange-500" />
                 </div>
 
                 <h3 className="text-lg font-semibold text-slate-900 mb-2">

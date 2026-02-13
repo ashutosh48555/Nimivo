@@ -26,10 +26,10 @@ export default function WhyChooseUs() {
             return (
               <div
                 key={item.title}
-                className="group p-6 rounded-2xl border border-slate-100 hover:border-emerald-100 hover:bg-emerald-50/30 transition-all duration-200"
+                className="group p-6 rounded-2xl border border-slate-100 hover:border-fp-orange-200 hover:bg-fp-orange-50/50 transition-all duration-300 hover:shadow-xl hover:shadow-fp-orange-500/5 hover:-translate-y-1"
               >
-                <div className="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-100 transition-colors">
-                  <Icon className="w-6 h-6 text-emerald-500" />
+                <div className="w-12 h-12 bg-fp-blue-50 rounded-xl flex items-center justify-center mb-4 group-hover:bg-fp-orange-100 transition-colors duration-300">
+                  <Icon className="w-6 h-6 text-fp-blue-600 group-hover:text-fp-orange-600 transition-colors" />
                 </div>
                 <h3 className="text-base font-semibold text-slate-900 mb-2">
                   {item.title}

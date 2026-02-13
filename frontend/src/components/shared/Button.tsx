@@ -10,19 +10,19 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantStyles = {
   primary:
-    'bg-emerald-500 text-white hover:bg-emerald-600 shadow-sm active:bg-emerald-700',
+    'bg-gradient-to-r from-fp-orange-500 to-fp-orange-600 text-white hover:shadow-lg hover:shadow-fp-orange-500/30 hover:scale-105 active:scale-95 border border-transparent',
   secondary:
-    'bg-slate-900 text-white hover:bg-slate-800 shadow-sm active:bg-slate-700',
+    'bg-fp-blue-900 text-white hover:bg-fp-blue-800 hover:shadow-lg hover:shadow-fp-blue-900/20 active:scale-95',
   outline:
-    'border-2 border-slate-200 text-slate-700 hover:bg-slate-50 active:bg-slate-100',
-  ghost: 'text-slate-600 hover:bg-slate-50 active:bg-slate-100',
-  danger: 'bg-red-500 text-white hover:bg-red-600 shadow-sm active:bg-red-700',
+    'border-2 border-fp-blue-200 text-fp-blue-700 hover:bg-fp-blue-50 active:bg-fp-blue-100 hover:border-fp-blue-300',
+  ghost: 'text-fp-slate-500 hover:bg-fp-slate-50 hover:text-fp-blue-700',
+  danger: 'bg-fp-error text-white hover:bg-red-600 shadow-sm active:scale-95',
 };
 
 const sizeStyles = {
-  sm: 'px-3 py-1.5 text-sm rounded-lg',
-  md: 'px-5 py-2.5 text-sm rounded-lg',
-  lg: 'px-7 py-3 text-base rounded-xl',
+  sm: 'px-4 py-2 text-xs rounded-full uppercase tracking-wide',
+  md: 'px-6 py-3 text-sm rounded-full',
+  lg: 'px-8 py-4 text-base rounded-full font-bold',
 };
 
 export default function Button({
@@ -37,7 +37,7 @@ export default function Button({
   return (
     <button
       className={cn(
-        'inline-flex items-center justify-center font-semibold transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none',
+        'inline-flex items-center justify-center font-heading transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fp-orange-400 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none',
         variantStyles[variant],
         sizeStyles[size],
         className
