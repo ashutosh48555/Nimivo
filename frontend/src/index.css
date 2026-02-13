@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fp-navy: #0F172A;
+  --color-fp-navy-light: #1E293B;
+  --color-fp-emerald: #10B981;
+  --color-fp-emerald-hover: #059669;
+  --color-fp-emerald-light: #D1FAE5;
+  --color-fp-surface: #F8FAFC;
+  --color-fp-surface-warm: #F1F5F9;
+  --color-fp-border: #E2E8F0;
+  --color-fp-text: #0F172A;
+  --color-fp-text-muted: #64748B;
+  --color-fp-text-light: #94A3B8;
+  --color-fp-success: #10B981;
+  --color-fp-warning: #F59E0B;
+  --color-fp-error: #EF4444;
+  --color-fp-info: #3B82F6;
+  --color-fp-cleaning: #EC4899;
+  --color-fp-plumbing: #06B6D4;
+  --color-fp-electrical: #F59E0B;
+  --color-fp-carpentry: #8B5CF6;
+  --color-fp-painting: #F97316;
+  --color-fp-salon: #A855F7;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+:root {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-fp-text);
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Section sub-label (Utilita pattern) */
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-fp-emerald);
+  margin-bottom: 0.5rem;
+}
+
+/* Shimmer loading */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+  border-radius: 0.5rem;
+}
+
+/* Active pulse dot */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.5); }
+}
+.pulse-active {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Skip link accessibility */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  background: var(--color-fp-navy);
+  color: #fff;
+  font-weight: 600;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-fp-surface); }
+::-webkit-scrollbar-thumb { background: var(--color-fp-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-fp-text-muted); }
