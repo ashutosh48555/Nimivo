@@ -56,46 +56,22 @@ User → API → Redis (availability check)
 ## 🛠 Tech Stack
 
 ### Frontend
-- React (Vite / Next.js)
+- React (Vite)
 - TypeScript
 - Tailwind CSS
 - shadcn/ui
-- TanStack Query
-- Zustand
-- Socket.io Client
 
 ### Backend
 - Node.js
-- Fastify
 - TypeScript
-- Prisma ORM
 - Socket.io
 
 ### Database
 - PostgreSQL
 - PostGIS (Geo-spatial indexing)
 
-### Caching & Real-Time
-- Redis
-- Redis Pub/Sub
-
-### Background Jobs
-- BullMQ
-
 ### Payments
 - Stripe / Razorpay
-
-### Infrastructure
-- Docker
-- Nginx
-- AWS (EC2, RDS, ElastiCache, S3)
-- Cloudflare
-
-### Monitoring
-- Prometheus
-- Grafana
-- Sentry
-
 ---
 
 ## 📊 Database Design (Core Tables)
