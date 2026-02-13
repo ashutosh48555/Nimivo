@@ -170,7 +170,7 @@ export default function LocationPicker() {
         } else {
           // Fallback without Google Geocoder — use a free reverse-geocoding call
           fetch(
-            `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json`
+            `https://nominatim.openstreetmap.org/reverse?lat=${latitude}&lon=${longitude}&format=json&accept-language=en`
           )
             .then((r) => r.json())
             .then((data) => {
@@ -210,7 +210,7 @@ export default function LocationPicker() {
       if (!input.trim()) return;
       try {
         const res = await fetch(
-          `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(input)}&format=json&addressdetails=1&limit=5&countrycodes=in`
+          `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(input)}&format=json&addressdetails=1&limit=5&countrycodes=in&accept-language=en`
         );
         const data = await res.json();
         // Map to the same shape as Google predictions

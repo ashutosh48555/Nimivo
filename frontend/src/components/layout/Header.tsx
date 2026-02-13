@@ -2,8 +2,9 @@ import { useState, useCallback } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '@/store/authStore';
 import { SignedIn, SignedOut, UserButton, useClerk } from '@clerk/clerk-react';
-import { Menu, X, Zap, LogOut, ChevronDown, Search } from 'lucide-react';
+import { Menu, X, Zap, LogOut, Search } from 'lucide-react';
 import LocationPicker from '@/components/shared/LocationPicker';
+import SmartSearchBar from '@/components/shared/SmartSearchBar';
 import { cn } from '@/lib/utils';
 
 export default function Header() {
@@ -65,16 +66,7 @@ export default function Header() {
           <div className="hidden md:flex items-center flex-1 max-w-2xl mx-8 gap-4">
             <LocationPicker />
 
-            <div className="flex-1 relative group">
-              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <Search className="h-4 w-4 text-slate-400 group-focus-within:text-fp-blue-600 transition-colors" />
-              </div>
-              <input
-                type="text"
-                className="block w-full pl-10 pr-3 py-2.5 border-none rounded-lg leading-5 bg-slate-100 text-slate-900 placeholder-slate-500 focus:outline-none focus:bg-white focus:ring-2 focus:ring-fp-blue-600 focus:shadow-lg transition-all text-sm"
-                placeholder="Search for 'AC Repair'..."
-              />
-            </div>
+            <SmartSearchBar />
           </div>
 
           {/* Right Navigation */}
