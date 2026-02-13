@@ -32,6 +32,9 @@ export const bookingSchema = z.object({
     .max(200, 'Address must be less than 200 characters'),
   scheduledDate: z.string().min(1, 'Please select a date'),
   scheduledTime: z.string().min(1, 'Please select a time'),
+  phone: z
+    .string()
+    .regex(/^[6-9]\d{9}$/, 'Please enter a valid 10-digit Indian mobile number'),
   notes: z.string().max(500, 'Notes must be less than 500 characters').optional(),
 });
 

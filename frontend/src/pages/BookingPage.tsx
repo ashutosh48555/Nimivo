@@ -12,7 +12,7 @@ import Button from '@/components/shared/Button';
 import Input from '@/components/shared/Input';
 import SectionLabel from '@/components/shared/SectionLabel';
 import type { Service } from '@/types';
-import { MapPin, Clock, Calendar, CheckCircle, ArrowLeft, ArrowRight } from 'lucide-react';
+import { MapPin, Clock, Calendar, CheckCircle, ArrowLeft, ArrowRight, Phone } from 'lucide-react';
 
 export default function BookingPage() {
   const { serviceId } = useParams();
@@ -192,6 +192,19 @@ export default function BookingPage() {
                     className="pl-9"
                     error={errors.address?.message}
                     {...register('address')}
+                  />
+                </div>
+
+                <div className="relative">
+                  <Phone className="absolute left-3 top-[39px] w-4 h-4 text-slate-400" />
+                  <Input
+                    label="Contact Number"
+                    type="tel"
+                    placeholder="Enter 10-digit mobile number"
+                    className="pl-9"
+                    maxLength={10}
+                    error={errors.phone?.message}
+                    {...register('phone')}
                   />
                 </div>
 
