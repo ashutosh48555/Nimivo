@@ -198,6 +198,25 @@ export default function SmartSearchBar() {
   /* ── Keyboard navigation ─────────────────────────── */
   const [activeIdx, setActiveIdx] = useState(-1);
 
+  /* ── Select a service ────────────────────────────── */
+  const selectService = useCallback((name: string, id?: string) => {
+    // Save to recent
+    const updated = [name, ...recentSearches.filter((s) => s !== name)].slice(0, 6);
+    setRecentSearches(updated);
+    localStorage.setItem('fp-recent-searches', JSON.stringify(updated));
+
+    setQuery('');
+    setOpen(false);
+    // Navigate to service detail if we have an id, otherwise search
+    if (id) {
+      navigate(`/service/${id}`);
+    } else {
+      // Try to find the item by name
+      const found = catalogue.find((i) => i.name.toLowerCase() === name.toLowerCase());
+      navigate(found ? `/service/${found.id}` : '/book');
+    }
+  }, [navigate, recentSearches, catalogue]);
+
   const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
     if (e.key === 'Escape') {
       setOpen(false);
@@ -217,28 +236,9 @@ export default function SmartSearchBar() {
       e.preventDefault();
       selectService(results[activeIdx].name, results[activeIdx].id);
     }
-  }, [open, results, activeIdx]);
+  }, [open, results, activeIdx, selectService]);
 
   useEffect(() => { setActiveIdx(-1); }, [query]);
-
-  /* ── Select a service ────────────────────────────── */
-  const selectService = useCallback((name: string, id?: string) => {
-    // Save to recent
-    const updated = [name, ...recentSearches.filter((s) => s !== name)].slice(0, 6);
-    setRecentSearches(updated);
-    localStorage.setItem('fp-recent-searches', JSON.stringify(updated));
-
-    setQuery('');
-    setOpen(false);
-    // Navigate to service detail if we have an id, otherwise search
-    if (id) {
-      navigate(`/service/${id}`);
-    } else {
-      // Try to find the item by name
-      const found = catalogue.find((i) => i.name.toLowerCase() === name.toLowerCase());
-      navigate(found ? `/service/${found.id}` : '/book');
-    }
-  }, [navigate, recentSearches, catalogue]);
 
   const handleTrendingClick = useCallback((text: string) => {
     setQuery(text);
@@ -263,6 +263,10 @@ export default function SmartSearchBar() {
         <input
           ref={inputRef}
           type="text"
+          role="combobox"
+          aria-expanded={open}
+          aria-autocomplete="list"
+          aria-label="Search services"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onFocus={() => setOpen(true)}

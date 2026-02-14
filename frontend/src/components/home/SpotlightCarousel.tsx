@@ -64,7 +64,7 @@ export default function SpotlightCarousel() {
               </div>
               <img
                 src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=600&q=80"
-                alt=""
+                alt="Spotless homes — professional deep cleaning starting at ₹499"
                 className="absolute right-0 top-0 w-[50%] h-full object-cover"
                 loading="lazy"
               />
@@ -96,7 +96,7 @@ export default function SpotlightCarousel() {
               </div>
               <img
                 src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80"
-                alt=""
+                alt="Instant help on demand — professionals at your doorstep in 15 minutes"
                 className="absolute right-0 top-0 w-[50%] h-full object-cover"
                 loading="lazy"
               />
@@ -129,7 +129,7 @@ export default function SpotlightCarousel() {
               </div>
               <img
                 src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80"
-                alt=""
+                alt="Weekend special — 25% off curated service packages"
                 className="absolute right-0 top-0 w-[50%] h-full object-cover"
                 loading="lazy"
               />

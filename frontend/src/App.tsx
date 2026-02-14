@@ -20,6 +20,7 @@ const TrackingPage = lazy(() => import('@/pages/customer/TrackingPage'));
 const HistoryPage = lazy(() => import('@/pages/customer/HistoryPage'));
 const ProviderDashboard = lazy(() => import('@/pages/provider/ProviderDashboard'));
 const AdminDashboard = lazy(() => import('@/pages/AdminDashboard'));
+const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
 
 function PageLoader() {
   return (
@@ -69,13 +70,13 @@ function ClerkAuthSync() {
           setAuthToken(token);
           connectSocket(token);
         }
-      });
+      }).catch(console.error);
     } else {
       setUser(null);
       setAuthToken(null);
       disconnectSocket();
     }
-  }, [isSignedIn, isLoaded, clerkUser]);
+  }, [isSignedIn, isLoaded, clerkUser, setUser, setLoading, getToken]);
 
   return null;
 }
@@ -186,7 +187,7 @@ function App() {
             <Route index element={<AdminDashboard />} />
           </Route>
 
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
       <ToastContainer />

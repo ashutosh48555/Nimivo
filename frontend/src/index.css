@@ -159,6 +159,11 @@ h6 {
 }
 
 /* Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #64748b #f8fafc;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }

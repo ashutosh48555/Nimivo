@@ -11,7 +11,7 @@ const iconMap: Record<string, React.ElementType> = {
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
           <SectionLabel label="Why FastPAYS" />

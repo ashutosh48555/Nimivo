@@ -39,7 +39,7 @@ export default function LocationPicker() {
   const [predictions, setPredictions] = useState<PlacePrediction[]>([]);
   const [detecting, setDetecting] = useState(false);
   const [error, setError] = useState('');
-  const [recentLocations] = useState(getRecent);
+  const [recentLocations, setRecentLocations] = useState(getRecent);
 
   const dropdownRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -117,14 +117,17 @@ export default function LocationPicker() {
             const loc = results[0].geometry.location;
             setLocation(short, loc.lat(), loc.lng());
             addRecent({ label: short, lat: loc.lat(), lng: loc.lng() });
+            setRecentLocations(getRecent());
           } else {
             setLocation(short);
             addRecent({ label: short, lat: null, lng: null });
+            setRecentLocations(getRecent());
           }
         });
       } else {
         setLocation(short);
         addRecent({ label: short, lat: null, lng: null });
+        setRecentLocations(getRecent());
       }
       setQuery('');
       setPredictions([]);
@@ -160,6 +163,7 @@ export default function LocationPicker() {
                   results[0].formatted_address.split(',')[0];
                 setLocation(locality, latitude, longitude);
                 addRecent({ label: locality, lat: latitude, lng: longitude });
+                setRecentLocations(getRecent());
                 setOpen(false);
               } else {
                 setLocation(`${latitude.toFixed(4)}, ${longitude.toFixed(4)}`, latitude, longitude);

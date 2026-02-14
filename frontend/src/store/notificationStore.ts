@@ -15,13 +15,11 @@ interface NotificationState {
   clearToasts: () => void;
 }
 
-let toastId = 0;
-
 export const useNotificationStore = create<NotificationState>((set) => ({
   toasts: [],
 
   addToast: (toast) => {
-    const id = String(++toastId);
+    const id = crypto.randomUUID();
     const duration = toast.duration ?? 4000;
     set((state) => ({
       toasts: [...state.toasts, { ...toast, id }],

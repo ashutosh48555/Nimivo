@@ -111,7 +111,7 @@ export default function OfferDetailPage() {
       >
         <div className="relative z-10 p-8 sm:p-12 max-w-[60%]">
           {offer.discount && (
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-bold rounded-full mb-4">
+            <span className={`inline-flex items-center gap-1.5 px-3 py-1 backdrop-blur-sm text-xs font-bold rounded-full mb-4 ${offer.textColor === 'text-white' ? 'bg-white/20 text-white' : 'bg-slate-900/10 text-slate-800'}`}>
               <Tag className="w-3 h-3" />
               {offer.discount}
             </span>

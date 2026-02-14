@@ -36,9 +36,9 @@ export const useBookingStore = create<BookingState>((set, _get) => ({
     try {
       const { data } = await bookingApi.getMyBookings();
       set({ bookings: data.data, isLoading: false });
-    } catch (error: any) {
+    } catch (error: unknown) {
       set({
-        error: error.response?.data?.message || 'Failed to load bookings',
+        error: error instanceof Error ? error.message : 'Failed to load bookings',
         isLoading: false,
       });
     }
@@ -49,9 +49,9 @@ export const useBookingStore = create<BookingState>((set, _get) => ({
     try {
       const { data } = await bookingApi.getById(id);
       set({ currentBooking: data.data, isLoading: false });
-    } catch (error: any) {
+    } catch (error: unknown) {
       set({
-        error: error.response?.data?.message || 'Failed to load booking',
+        error: error instanceof Error ? error.message : 'Failed to load booking',
         isLoading: false,
       });
     }
@@ -68,9 +68,9 @@ export const useBookingStore = create<BookingState>((set, _get) => ({
         isLoading: false,
       }));
       return newBooking;
-    } catch (error: any) {
+    } catch (error: unknown) {
       set({
-        error: error.response?.data?.message || 'Failed to create booking',
+        error: error instanceof Error ? error.message : 'Failed to create booking',
         isLoading: false,
       });
       throw error;
@@ -89,8 +89,8 @@ export const useBookingStore = create<BookingState>((set, _get) => ({
             ? { ...state.currentBooking, status: 'cancelled' as const }
             : state.currentBooking,
       }));
-    } catch (error: any) {
-      set({ error: error.response?.data?.message || 'Failed to cancel' });
+    } catch (error: unknown) {
+      set({ error: error instanceof Error ? error.message : 'Failed to cancel' });
       throw error;
     }
   },
@@ -103,8 +103,8 @@ export const useBookingStore = create<BookingState>((set, _get) => ({
           b.id === id ? { ...b, status: 'completed' as const } : b
         ),
       }));
-    } catch (error: any) {
-      set({ error: error.response?.data?.message || 'Failed to submit rating' });
+    } catch (error: unknown) {
+      set({ error: error instanceof Error ? error.message : 'Failed to submit rating' });
       throw error;
     }
   },

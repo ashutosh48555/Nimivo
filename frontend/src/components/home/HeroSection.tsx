@@ -10,7 +10,7 @@ const heroServices = MOCK_SERVICES.slice(0, 6);
 // High-quality, reliable images with labels
 const HERO_IMAGES = [
   {
-    src: 'https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?auto=format&fit=crop&q=80&w=800',
+    src: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=800',
     label: 'Home Cleaning',
     tag: 'Most Booked',
   },
@@ -20,7 +20,7 @@ const HERO_IMAGES = [
     tag: null,
   },
   {
-    src: 'https://images.unsplash.com/photo-1585747860019-8c947e2e7c78?auto=format&fit=crop&q=80&w=800',
+    src: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&q=80&w=800',
     label: 'Plumbing',
     tag: 'Express',
   },
@@ -68,6 +68,7 @@ export default function HeroSection() {
   const y1 = useTransform(scrollYProgress, [0, 1], [0, -60]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, -40]);
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, -80]);
   const blobRotate = useTransform(scrollYProgress, [0, 1], [0, 45]);
 
   return (
@@ -256,6 +257,32 @@ export default function HeroSection() {
             >
               <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/40 ring-2 ring-white/80 border-2 border-slate-200/60">
                 <img
+                  src={HERO_IMAGES[2].src}
+                  alt={HERO_IMAGES[2].label}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  {HERO_IMAGES[2].tag && (
+                    <span className="inline-block px-2.5 py-0.5 bg-fp-blue-600 text-white text-[10px] font-bold rounded-full mb-1.5 tracking-wider uppercase">
+                      {HERO_IMAGES[2].tag}
+                    </span>
+                  )}
+                  <p className="text-white font-bold text-base">{HERO_IMAGES[2].label}</p>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Image 4 — Bottom right */}
+            <motion.div
+              className="absolute bottom-4 right-0 w-[50%] h-[48%] group"
+              initial={{ opacity: 0, x: 30, y: 30 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              style={{ y: y4 }}
+            >
+              <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/40 ring-2 ring-white/80 border-2 border-slate-200/60">
+                <img
                   src={HERO_IMAGES[3].src}
                   alt={HERO_IMAGES[3].label}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
@@ -268,27 +295,6 @@ export default function HeroSection() {
                     </span>
                   )}
                   <p className="text-white font-bold text-base">{HERO_IMAGES[3].label}</p>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Image 4 — Bottom right */}
-            <motion.div
-              className="absolute bottom-4 right-0 w-[50%] h-[48%] group"
-              initial={{ opacity: 0, x: 30, y: 30 }}
-              animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              style={{ y: y1 }}
-            >
-              <div className="w-full h-full rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/40 ring-2 ring-white/80 border-2 border-slate-200/60">
-                <img
-                  src={HERO_IMAGES[4].src}
-                  alt={HERO_IMAGES[4].label}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <p className="text-white font-bold text-base">{HERO_IMAGES[4].label}</p>
                   <div className="flex items-center gap-1.5 mt-0.5">
                     <Star className="w-3 h-3 text-amber-400 fill-amber-400" />
                     <span className="text-white/80 text-[11px] font-medium">4.7 • 800K bookings</span>

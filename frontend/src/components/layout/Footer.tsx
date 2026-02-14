@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Zap, Phone, Mail, MapPin } from 'lucide-react';
+import { MOCK_SERVICES } from '@/lib/constants';
 
 export default function Footer() {
   return (
@@ -28,20 +29,13 @@ export default function Footer() {
               Services
             </h4>
             <ul className="space-y-2.5">
-              {[
-                'Deep Cleaning',
-                'Plumbing',
-                'Electrician',
-                'Carpentry',
-                'Painting',
-                'Salon at Home',
-              ].map((s) => (
-                <li key={s}>
+              {MOCK_SERVICES.map((s) => (
+                <li key={s.id}>
                   <Link
-                    to="/book"
+                    to={`/service/${s.id}`}
                     className="text-sm text-slate-300 hover:text-fp-orange-500 transition-colors"
                   >
-                    {s}
+                    {s.name}
                   </Link>
                 </li>
               ))}
@@ -57,9 +51,9 @@ export default function Footer() {
               {[
                 { label: 'About Us', href: '/#about' },
                 { label: 'How It Works', href: '/#how-it-works' },
-                { label: 'Careers', href: '#' },
-                { label: 'Privacy Policy', href: '#' },
-                { label: 'Terms of Service', href: '#' },
+                { label: 'Careers', href: '/#about' },
+                { label: 'Privacy Policy', href: '/#about' },
+                { label: 'Terms of Service', href: '/#about' },
               ].map((item) => (
                 <li key={item.label}>
                   <Link

@@ -31,7 +31,7 @@ export default function ServiceCategoryRow({
     checkScroll();
     window.addEventListener('resize', checkScroll);
     return () => window.removeEventListener('resize', checkScroll);
-  }, []);
+  }, [items]);
 
   const scroll = (dir: 'left' | 'right') => {
     if (!scrollRef.current) return;
