@@ -134,7 +134,7 @@ export default function HeroSection() {
                       transition={{ delay: 0.5 + idx * 0.08, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
                     >
                       <Link
-                        to={`/book/${service.id}`}
+                        to={`/service/${service.id}`}
                         className="group flex flex-col items-center justify-center p-4 rounded-2xl bg-slate-50/80 hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-slate-200 hover:-translate-y-0.5"
                       >
                         <div className={`w-14 h-14 mb-2.5 rounded-2xl flex items-center justify-center text-2xl shadow-sm ${style.bg} ${style.shadow} group-hover:scale-110 group-hover:shadow-md transition-all duration-300`}>

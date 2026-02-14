@@ -41,7 +41,7 @@ export default function SpotlightCarousel() {
           >
             {/* Banner 1: Spotless Home */}
             <Link
-              to="/book/1"
+              to="/offer/spotless-home"
               className="flex-shrink-0 w-[300px] sm:w-[360px] lg:w-[calc(33.333%-11px)] h-[240px] rounded-2xl overflow-hidden bg-[#F5F0EB] relative group/b"
             >
               <div className="relative z-10 p-6 h-full flex flex-col justify-between">
@@ -73,7 +73,7 @@ export default function SpotlightCarousel() {
 
             {/* Banner 2: Instant Help */}
             <Link
-              to="/book"
+              to="/offer/instant-help"
               className="flex-shrink-0 w-[300px] sm:w-[360px] lg:w-[calc(33.333%-11px)] h-[240px] rounded-2xl overflow-hidden relative group/b bg-fp-blue-700"
             >
               <div className="relative z-10 p-6 h-full flex flex-col justify-between">
@@ -105,7 +105,7 @@ export default function SpotlightCarousel() {
 
             {/* Banner 3: Weekend Special */}
             <Link
-              to="/book"
+              to="/offer/weekend-special"
               className="flex-shrink-0 w-[300px] sm:w-[360px] lg:w-[calc(33.333%-11px)] h-[240px] rounded-2xl overflow-hidden relative group/b"
               style={{ background: 'linear-gradient(135deg, #E11D48 0%, #DB2777 100%)' }}
             >

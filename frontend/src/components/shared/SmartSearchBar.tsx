@@ -215,14 +215,14 @@ export default function SmartSearchBar() {
       setActiveIdx((i) => Math.max(i - 1, 0));
     } else if (e.key === 'Enter' && activeIdx >= 0 && results[activeIdx]) {
       e.preventDefault();
-      selectService(results[activeIdx].name);
+      selectService(results[activeIdx].name, results[activeIdx].id);
     }
   }, [open, results, activeIdx]);
 
   useEffect(() => { setActiveIdx(-1); }, [query]);
 
   /* ── Select a service ────────────────────────────── */
-  const selectService = useCallback((name: string) => {
+  const selectService = useCallback((name: string, id?: string) => {
     // Save to recent
     const updated = [name, ...recentSearches.filter((s) => s !== name)].slice(0, 6);
     setRecentSearches(updated);
@@ -230,8 +230,15 @@ export default function SmartSearchBar() {
 
     setQuery('');
     setOpen(false);
-    navigate('/book');
-  }, [navigate, recentSearches]);
+    // Navigate to service detail if we have an id, otherwise search
+    if (id) {
+      navigate(`/service/${id}`);
+    } else {
+      // Try to find the item by name
+      const found = catalogue.find((i) => i.name.toLowerCase() === name.toLowerCase());
+      navigate(found ? `/service/${found.id}` : '/book');
+    }
+  }, [navigate, recentSearches, catalogue]);
 
   const handleTrendingClick = useCallback((text: string) => {
     setQuery(text);
@@ -293,7 +300,7 @@ export default function SmartSearchBar() {
               {results.map((item, idx) => (
                 <button
                   key={item.id}
-                  onClick={() => selectService(item.name)}
+                  onClick={() => selectService(item.name, item.id)}
                   onMouseEnter={() => setActiveIdx(idx)}
                   className={cn(
                     'w-full flex items-center gap-3 px-4 py-2.5 text-left transition-colors group/item',

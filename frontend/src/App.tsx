@@ -14,6 +14,8 @@ const HomePage = lazy(() => import('@/pages/customer/HomePage'));
 const LoginPage = lazy(() => import('@/pages/auth/LoginPage'));
 const RegisterPage = lazy(() => import('@/pages/auth/RegisterPage'));
 const BookingPage = lazy(() => import('@/pages/customer/BookingPage'));
+const ServiceDetailPage = lazy(() => import('@/pages/customer/ServiceDetailPage'));
+const OfferDetailPage = lazy(() => import('@/pages/customer/OfferDetailPage'));
 const TrackingPage = lazy(() => import('@/pages/customer/TrackingPage'));
 const HistoryPage = lazy(() => import('@/pages/customer/HistoryPage'));
 const ProviderDashboard = lazy(() => import('@/pages/provider/ProviderDashboard'));
@@ -111,6 +113,8 @@ function App() {
 
           <Route element={<CustomerLayout />}>
             <Route path="/" element={<HomePage />} />
+            <Route path="/service/:serviceId" element={<ServiceDetailPage />} />
+            <Route path="/offer/:offerId" element={<OfferDetailPage />} />
 
             <Route
               path="/login"

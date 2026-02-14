@@ -5,6 +5,7 @@ import { SignedIn, SignedOut, UserButton, useClerk } from '@clerk/clerk-react';
 import { Menu, X, Zap, LogOut, Search } from 'lucide-react';
 import LocationPicker from '@/components/shared/LocationPicker';
 import SmartSearchBar from '@/components/shared/SmartSearchBar';
+import CartDropdown from '@/components/shared/CartDropdown';
 import { cn } from '@/lib/utils';
 
 export default function Header() {
@@ -89,6 +90,7 @@ export default function Header() {
 
             {/* User Profile / Auth Buttons */}
             <div className="flex items-center gap-3">
+              <CartDropdown />
               <SignedIn>
                 <UserButton
                   appearance={{

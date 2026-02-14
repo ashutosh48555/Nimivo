@@ -84,7 +84,7 @@ export default function ServiceCategoryRow({
           >
             {items.map((item) => (
               <Link
-                to="/book"
+                to={`/service/${item.id}`}
                 key={item.id}
                 className="flex-shrink-0 w-[170px] sm:w-[190px] group/card"
               >
