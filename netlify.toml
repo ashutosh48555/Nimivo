@@ -2,3 +2,9 @@
   base    = "frontend"
   publish = "dist"
   command = "npm install && npm run build"
+
+# SPA fallback — serve index.html for all client-side routes
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
