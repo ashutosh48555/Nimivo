@@ -166,15 +166,11 @@ function VisualPanel({ isProvider, role }: { isProvider: boolean; role: string }
         {/* Icon */}
         <motion.div
           className={`w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 ${
-            isProvider ? 'bg-white/20 backdrop-blur-sm border border-white/20' : 'bg-white/20 backdrop-blur-sm border border-white/15 shadow-lg shadow-white/5'
+            isProvider ? 'bg-white/20 backdrop-blur-sm border border-white/20 shadow-lg shadow-white/5' : 'bg-white/20 backdrop-blur-sm border border-white/15 shadow-lg shadow-white/5'
           }`}
           variants={fadeUp}
         >
-          {isProvider ? (
-            <Briefcase className="w-10 h-10 text-white" />
-          ) : (
-            <img src="/logo.png" alt="FastPAYS" className="w-14 h-14 object-contain drop-shadow-lg" />
-          )}
+          <img src="/logo.png" alt="FastPAYS" className="w-14 h-14 object-contain drop-shadow-lg" />
         </motion.div>
 
         <motion.h2 className="text-3xl font-bold text-white font-heading mb-3" variants={fadeUp}>
