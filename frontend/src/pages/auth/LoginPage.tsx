@@ -1,6 +1,6 @@
 import { useSearchParams, Link } from 'react-router-dom';
 import { SignIn } from '@clerk/clerk-react';
-import { Zap, User, Briefcase, ArrowLeft, Shield, Clock, TrendingUp, Star } from 'lucide-react';
+import { User, Briefcase, ArrowLeft, Shield, Clock, TrendingUp, Star } from 'lucide-react';
 
 export default function LoginPage() {
   const [searchParams] = useSearchParams();
@@ -106,7 +106,7 @@ export default function LoginPage() {
           <div className={`w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 ${isProvider ? 'bg-fp-orange-500/20' : 'bg-white/15'}`}>
             {isProvider
               ? <Briefcase className="w-10 h-10 text-fp-orange-400" />
-              : <Zap className="w-10 h-10 text-white" />
+              : <img src="/logo.png" alt="FastPAYS" className="w-12 h-12 object-contain" />
             }
           </div>
 

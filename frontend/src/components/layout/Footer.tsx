@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Zap, Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import { MOCK_SERVICES } from '@/lib/constants';
 
 export default function Footer() {
@@ -9,10 +9,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-fp-blue-700/50 backdrop-blur rounded-xl flex items-center justify-center border border-fp-blue-600">
-                <Zap className="w-6 h-6 text-fp-orange-500 fill-current" />
-              </div>
+            <Link to="/" className="flex items-center gap-2 group">
+              <img
+                src="/logo.png"
+                alt="FastPAYS"
+                className="w-10 h-10 rounded-xl object-contain group-hover:scale-105 transition-transform"
+              />
               <span className="text-2xl font-bold font-heading">
                 Fast<span className="text-fp-orange-500">PAYS</span>
               </span>

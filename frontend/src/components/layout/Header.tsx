@@ -54,9 +54,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 bg-fp-blue-700 rounded-lg flex items-center justify-center group-hover:bg-fp-blue-600 transition-colors shadow-lg shadow-fp-blue-700/20">
-              <Zap className="w-5 h-5 text-white fill-current" />
-            </div>
+            <img
+              src="/logo.png"
+              alt="FastPAYS"
+              className="w-9 h-9 rounded-lg object-contain group-hover:scale-105 transition-transform"
+            />
             <span className="text-2xl font-bold text-fp-blue-900 font-heading tracking-tight">
               Fast<span className="text-fp-orange-500">PAYS</span>
             </span>

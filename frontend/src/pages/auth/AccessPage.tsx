@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
-import { Zap, Briefcase, User, ArrowRight, Shield, Clock, Star, IndianRupee, TrendingUp, CalendarCheck } from 'lucide-react';
+import { Briefcase, User, ArrowRight, Shield, Clock, Star, IndianRupee, TrendingUp, CalendarCheck } from 'lucide-react';
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -18,9 +18,11 @@ export default function AccessPage() {
       {/* Top brand bar */}
       <div className="text-center pt-10 pb-6">
         <Link to="/" className="inline-flex items-center gap-2 group">
-          <div className="w-10 h-10 bg-fp-blue-700 rounded-xl flex items-center justify-center group-hover:bg-fp-blue-600 transition-colors shadow-lg shadow-fp-blue-700/20">
-            <Zap className="w-5 h-5 text-white fill-current" />
-          </div>
+          <img
+            src="/logo.png"
+            alt="FastPAYS"
+            className="w-10 h-10 rounded-xl object-contain group-hover:scale-105 transition-transform"
+          />
           <span className="text-2xl font-bold text-fp-blue-900 font-heading tracking-tight">
             Fast<span className="text-fp-orange-500">PAYS</span>
           </span>
