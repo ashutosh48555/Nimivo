@@ -56,11 +56,11 @@ export default function Header() {
           <Link to="/" className="flex items-center gap-2 group">
             <img
               src="/logo.png"
-              alt="FastPAYS"
+              alt="CraftGuild"
               className="w-9 h-9 rounded-lg object-contain group-hover:scale-105 transition-transform"
             />
             <span className="text-2xl font-bold text-fp-blue-900 font-heading tracking-tight">
-              Fast<span className="text-fp-orange-500">PAYS</span>
+              Craft<span className="text-fp-orange-500">Guild</span>
             </span>
           </Link>
 

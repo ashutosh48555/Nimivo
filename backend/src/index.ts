@@ -74,7 +74,7 @@ app.set('io', io);
 // Start server
 httpServer.listen(config.port, () => {
   console.log(`
-  ⚡ FastPAYS Backend running
+  🏛️  CraftGuild Backend running
   → Port:    ${config.port}
   → Mode:    ${config.nodeEnv}
   → Health:  http://localhost:${config.port}/api/health

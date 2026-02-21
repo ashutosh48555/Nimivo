@@ -12,11 +12,11 @@ export default function Footer() {
             <Link to="/" className="flex items-center gap-2 group">
               <img
                 src="/logo.png"
-                alt="FastPAYS"
+                alt="CraftGuild"
                 className="w-10 h-10 rounded-xl object-contain group-hover:scale-105 transition-transform"
               />
               <span className="text-2xl font-bold font-heading">
-                Fast<span className="text-fp-orange-500">PAYS</span>
+                Craft<span className="text-fp-orange-500">Guild</span>
               </span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed">
@@ -81,7 +81,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5 text-sm text-slate-400">
                 <Mail className="w-4 h-4 text-fp-orange-500 flex-shrink-0" />
-                support@fastpays.in
+                support@craftguild.in
               </li>
               <li className="flex items-start gap-2.5 text-sm text-slate-400">
                 <MapPin className="w-4 h-4 text-fp-orange-500 flex-shrink-0 mt-0.5" />
@@ -93,7 +93,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-slate-400">
-            &copy; {new Date().getFullYear()} FastPAYS. All rights reserved.
+            &copy; {new Date().getFullYear()} CraftGuild. All rights reserved.
           </p>
           <p className="text-xs text-slate-500">
             Built with ❤️ for India&apos;s fastest home services

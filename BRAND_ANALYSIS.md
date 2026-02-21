@@ -1,9 +1,108 @@
-# Brand Name Analysis — Premium Edition v3
+# Brand Name Analysis — Final Decision
 
 > **Last Updated:** 21 February 2026  
 > **Research scope:** 350+ names across 3 scanning sessions  
-> **Domains confirmed:** domainsdb.info API + whois  
-> **Benchmark:** Names must feel like CRED / Zepto / Zomato — not a local service startup
+> **FINAL CHOSEN NAME:** CraftGuild  
+> **Reason:** Two real meaningful English words. Urban Company-style clarity. Guild = verified quality association of craftsmen who bid for work — maps directly to the product.
+
+---
+
+## ✅ FINAL DECISION: CraftGuild
+
+```
+craftguild.com  — check & register at namecheap.com
+craftguild.in   — check & register at godaddy.com/en-in
+```
+
+**Why CraftGuild beats everything else:**
+
+Urban Company = two plain English words. Anyone in India understands it in 0.5 seconds.
+CraftGuild follows the exact same formula — but it's *better positioned*:
+
+| Word | Urban Company | CraftGuild |
+|------|--------------|------------|
+| Word 1 | Urban (who you serve) | Craft (what the pros do) |
+| Word 2 | Company (professionalism promise) | Guild (quality association, verified membership) |
+| USP signal | Organized professionals | Competitive guild — pros bid for your job |
+
+A **Guild** historically was:
+- An association of craftsmen who **competed for commissions** (= your bidding system)
+- A body that **certified member quality** (= your verification system)
+- A structure that **protected customers** from substandard work (= your rating system)
+
+The name tells the entire product story without a single word of explanation.
+
+**Tagline:** *"India's Guild of Home Professionals"*  
+**Positioning:** Premium. Trust-forward. Provider-proud. Globally understood.  
+**Visual DNA:** Deep burgundy/maroon + gold or slate + amber. Think a premium membership club.
+
+---
+
+## Register These Now
+
+| Domain | Registrar | Cost |
+|--------|-----------|------|
+| craftguild.com | Namecheap | ~$10/year |
+| craftguild.in | BigRock / GoDaddy India | ~₹700/year |
+
+https://www.namecheap.com — search craftguild  
+https://www.godaddy.com/en-in — search craftguild
+
+---
+
+## Social Handles to Lock
+
+| Platform | Handle |
+|----------|--------|
+| Instagram | @craftguild |
+| X / Twitter | @craftguild or @craftguildin |
+| LinkedIn | /company/craftguild |
+| YouTube | @craftguild |
+| WhatsApp Business | CraftGuild |
+
+---
+
+## Trademark Filing
+
+https://ipindiaservices.gov.in/publicsearch  
+- Class 35 (marketplace/advertising)  
+- Class 42 (software/platform)  
+- Class 45 (home/personal services)  
+Cost: ₹5,000–10,000 DIY | ₹15,000–25,000 via agent
+
+---
+
+## Codebase Already Renamed ✅
+
+All FastPays → CraftGuild renames completed on 21 February 2026:
+
+- [x] `package.json` (root, frontend, backend)
+- [x] `frontend/index.html` — page title
+- [x] `Header.tsx` — logo text
+- [x] `Footer.tsx` — brand name, email, copyright
+- [x] `constants.ts` — APP_NAME, APP_TAGLINE, APP_DESCRIPTION
+- [x] `docker-compose.yml` — container names, db name
+- [x] `backend/src/config/env.ts` — db URL, JWT secret
+- [x] `backend/drizzle.config.ts` — db URL
+- [x] `backend/src/index.ts` — startup log
+- [x] `README.md` — title and description
+
+---
+
+## Why All Previous Name Research Led Here
+
+| Research Round | Names Found | Why Discarded |
+|----------------|-------------|---------------|
+| Round 1 (19 Feb) | NipunPro, DakshPro | "Pro" suffix = freelancer marketplace, not a tech brand |
+| Round 2 (21 Feb R1) | Zerviyo, BidVolve | Frankenstein invented words, no real meaning |
+| Round 3 (21 Feb R2) | Zivira, Zevita, Truvio | Good invented words — but user wanted Urban Company-style real word clarity |
+| **Final (21 Feb)** | **CraftGuild** | Two real English words. Immediate meaning. Maps to the product. Premium. |
+
+---
+
+**Document version:** 4.0 — Final  
+**Updated:** 21 February 2026  
+**Status:** DECIDED. Register craftguild.com + craftguild.in tonight.
 
 ---
 
@@ -136,54 +235,6 @@ The connected hero. Premium, India-rooted, modern.
 
 ---
 
-
-## Competitive Context — Why the Name Matters More Than Usual
-
-### The Competitor: Urban Company (formerly UrbanClap)
-
-Urban Company is not just a competitor — it is **the category definition** in India.  
-When someone thinks "home service app," they think Urban Company.  
-Your brand name must do one of two things:
-
-1. **Sound like a better version of Urban Company** — same trust, higher quality  
-2. **Sound like a completely different category** — disruptive, not derivative
-
-The worst thing you can do is sound like a *cheaper Urban Company clone.*
-
-### What Urban Company's Brand Does
-
-| Element | Urban Company |
-|---------|--------------|
-| Name feel | Corporate, safe, descriptive |
-| Positioning | "Professional services, delivered" |
-| Model | Fixed pricing, company-vetted pros |
-| Brand tone | Polished but generic |
-| Weakness | No price competition, provider-unfriendly, feels cold |
-
-### Why "Zivira" Wins Against Urban Company
-
-| Element | Urban Company | Zivira |
-|---------|--------------|--------|
-| Name type | Descriptive (Urban + Company) | Invented — like CRED, Zepto |
-| Positioning | Fixed price, take it or leave it | Bids compete — you choose |
-| Brand feel | Corporate safety | Bold, premium, trust-first |
-| Target | Everyone in cities | Premium urban + aspiring Tier 2 |
-| USP signal | Professional = vetted | Premium + transparent pricing |
-| Differentiation | None obvious from name | "Vira" = hero — pros are heroes |
-
-> **The strategic bet:** Urban Company owns "professional services."  
-> Zivira owns "the boldest home services experience" — where pros compete for you.
-
-### The Rebranding Lesson From Urban Company
-
-UrbanClap → Urban Company in 2021.  
-**Why they rebranded:** "Clap" felt cheap, casual, local. "Company" felt premium, trustworthy, national.  
-They paid crores to make that shift after launch.
-
-**You have the chance to get it right from Day 1.**  
-A name like Zivira already sits several tiers above where UrbanClap started.
-
----
 
 ## Why All Previous Names Were Wrong
 

@@ -1,9 +1,9 @@
 import type { ServiceCategory } from '@/types';
 
-export const APP_NAME = 'FastPAYS';
-export const APP_TAGLINE = 'Get Professional Help Within 15 Minutes';
+export const APP_NAME = 'CraftGuild';
+export const APP_TAGLINE = "India's Guild of Home Professionals";
 export const APP_DESCRIPTION =
-  'Lightning-fast home services with guaranteed arrival in 15 minutes. Book cleaning, plumbing, electrical & more.';
+  'CraftGuild is India\'s first provider-first home services marketplace. Post your job, get competitive bids from verified professionals, and pick the best one.';
 
 export const SERVICE_CATEGORIES: {
   value: ServiceCategory;
@@ -100,7 +100,7 @@ export const MOCK_TESTIMONIALS = [
     name: 'Priya Sharma',
     city: 'Mumbai',
     rating: 5,
-    text: 'FastPAYS saved my weekend! The plumber arrived in 11 minutes and fixed my leak in no time. Incredible service.',
+    text: 'CraftGuild saved my weekend! The plumber arrived in 11 minutes and fixed my leak in no time. Incredible service.',
     avatar: '',
   },
   {
@@ -192,7 +192,7 @@ export const FAQ_ITEMS = [
       'We guarantee arrival within 15 minutes of booking confirmation. Our smart dispatch system finds the nearest available verified professional and assigns them to your booking instantly.',
   },
   {
-    question: 'What services does FastPAYS offer?',
+    question: 'What services does CraftGuild offer?',
     answer:
       'We offer 6 core services: Deep Cleaning (₹499), Plumbing (₹349), Electrician (₹399), Carpentry (₹599), Painting (₹799), and Salon at Home (₹449). Each service is performed by verified professionals.',
   },

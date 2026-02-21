@@ -1,8 +1,8 @@
-# ⚡ FastPAYS – Instant Service Booking Platform
+# 🏛️ CraftGuild — India's Guild of Home Professionals
 
-FastPAYS is a hyper-local on-demand service platform that connects users with nearby service providers (Plumber, Electrician, Cleaner, Cook, etc.) within **15 minutes** using real-time geo-matching.
+CraftGuild is India's first **provider-first home services marketplace** where customers post jobs, verified professionals bid competitively, and the customer picks the best offer.
 
-Built with production-grade scalability and real-time tracking in mind.
+Built with production-grade scalability and real-time bidding in mind.
 
 ---
 
@@ -15,7 +15,7 @@ Traditional service booking platforms operate on scheduled slots and lack real-t
 - No real-time tracking
 - No transparent ETA
 
-FastPAYS solves this by implementing a **Proximity-First Matching Algorithm** that guarantees rapid dispatch.
+CraftGuild solves this by implementing a **Competitive Bidding System** where verified providers compete for each job, giving customers choice, fair pricing, and quality accountability.
 
 ---
 
