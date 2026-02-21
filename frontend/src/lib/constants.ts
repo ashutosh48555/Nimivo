@@ -1,9 +1,9 @@
 import type { ServiceCategory } from '@/types';
 
-export const APP_NAME = 'CraftGuild';
-export const APP_TAGLINE = "India's Guild of Home Professionals";
+export const APP_NAME = 'Nimivo';
+export const APP_TAGLINE = "India's Home Services Exchange";
 export const APP_DESCRIPTION =
-  'CraftGuild is India\'s first provider-first home services marketplace. Post your job, get competitive bids from verified professionals, and pick the best one.';
+  'Nimivo is India\'s first competitive home services exchange. Post your job, get bids from verified professionals, and choose the best one.';
 
 export const SERVICE_CATEGORIES: {
   value: ServiceCategory;

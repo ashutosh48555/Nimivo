@@ -6,6 +6,6 @@ export default {
   out: './drizzle',
   dialect: 'postgresql',
   dbCredentials: {
-    url: process.env.DATABASE_URL || 'postgresql://postgres:postgres@localhost:5432/craftguild',
+    url: process.env.DATABASE_URL || 'postgresql://postgres:postgres@localhost:5432/nimivo',
   },
 } satisfies Config;

@@ -1,5 +1,5 @@
 {
-  "name": "craftguild",
+  "name": "nimivo",
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
