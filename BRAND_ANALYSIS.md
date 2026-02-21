@@ -137,6 +137,54 @@ The connected hero. Premium, India-rooted, modern.
 ---
 
 
+## Competitive Context — Why the Name Matters More Than Usual
+
+### The Competitor: Urban Company (formerly UrbanClap)
+
+Urban Company is not just a competitor — it is **the category definition** in India.  
+When someone thinks "home service app," they think Urban Company.  
+Your brand name must do one of two things:
+
+1. **Sound like a better version of Urban Company** — same trust, higher quality  
+2. **Sound like a completely different category** — disruptive, not derivative
+
+The worst thing you can do is sound like a *cheaper Urban Company clone.*
+
+### What Urban Company's Brand Does
+
+| Element | Urban Company |
+|---------|--------------|
+| Name feel | Corporate, safe, descriptive |
+| Positioning | "Professional services, delivered" |
+| Model | Fixed pricing, company-vetted pros |
+| Brand tone | Polished but generic |
+| Weakness | No price competition, provider-unfriendly, feels cold |
+
+### Why "Zivira" Wins Against Urban Company
+
+| Element | Urban Company | Zivira |
+|---------|--------------|--------|
+| Name type | Descriptive (Urban + Company) | Invented — like CRED, Zepto |
+| Positioning | Fixed price, take it or leave it | Bids compete — you choose |
+| Brand feel | Corporate safety | Bold, premium, trust-first |
+| Target | Everyone in cities | Premium urban + aspiring Tier 2 |
+| USP signal | Professional = vetted | Premium + transparent pricing |
+| Differentiation | None obvious from name | "Vira" = hero — pros are heroes |
+
+> **The strategic bet:** Urban Company owns "professional services."  
+> Zivira owns "the boldest home services experience" — where pros compete for you.
+
+### The Rebranding Lesson From Urban Company
+
+UrbanClap → Urban Company in 2021.  
+**Why they rebranded:** "Clap" felt cheap, casual, local. "Company" felt premium, trustworthy, national.  
+They paid crores to make that shift after launch.
+
+**You have the chance to get it right from Day 1.**  
+A name like Zivira already sits several tiers above where UrbanClap started.
+
+---
+
 ## Why All Previous Names Were Wrong
 
 | Old Name | Problem |
