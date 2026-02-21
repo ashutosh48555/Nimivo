@@ -1,4 +1,4 @@
-# FastPays: Complete Problems & Solutions Handbook
+# Nimivo: Complete Problems & Solutions Handbook
 
 > **Comprehensive Reference Document**  
 > Every critical problem you'll face building a provider-first home services marketplace, with detailed solutions, workflows, and implementation code.
@@ -40,7 +40,7 @@ What Happens:
 1. Electrician goes to customer's home
 2. They exchange phone numbers (WhatsApp, written, or verbally)
 3. Next time customer needs the service → calls electrician directly
-4. FastPays loses ₹39 lead fee + future repeat bookings
+4. Nimivo loses ₹39 lead fee + future repeat bookings
 5. Electrician tells 2 other providers → cascading effect across network
 
 Real Impact:
@@ -55,7 +55,7 @@ Real Impact:
 |---|---|
 | Repeat customers are your highest-margin revenue source (CAC = ₹0) | Off-platform transactions directly hurt profitability |
 | Losing them compounds | The electrician who left tells 2 others → ₹500/month business lost × 2 = ₹1,000/month ripple |
-| Investors see this | They know platforms struggle with disintermediation. How will FastPays solve it? |
+| Investors see this | They know platforms struggle with disintermediation. How will Nimivo solve it? |
 
 ---
 
@@ -73,7 +73,7 @@ Traditional (UC, most platforms):
   ₹500 job → ₹125-150 platform fee
   Going off-platform saves: ₹125-150 (HUGE incentive to leave)
 
-FastPays Model:
+Nimivo Model:
   Lead fee: ₹39 flat per bid opportunity
   ₹500 job → ₹39 platform fee
   Going off-platform saves: ₹39 (not worth finding new customers + WhatsApp hassle)
@@ -238,7 +238,7 @@ io.on('booking:message', (data) => {
 **Key Insight:** Reputation, portfolio, and customer pipeline are non-portable.
 
 ```
-After 2 years on FastPays:
+After 2 years on Nimivo:
   • Provider has 142 reviews
   • 67 before/after photos
   • "Gold Pro" badge
@@ -246,7 +246,7 @@ After 2 years on FastPays:
 
 If they leave platform for one ₹40 save:
   • They lose access to bidding (no new customers)
-  • Portfolio stays on FastPays (but customer can't find them)
+  • Portfolio stays on Nimivo (but customer can't find them)
   • All past reviews/ratings lost
 
 Cost of leaving: ₹5,000+/month opportunity loss
@@ -942,10 +942,10 @@ GET    /api/bookings/:id/payment-status
 ### The Problem
 
 ```
-Provider accepts FastPays job at 3 PM
+Provider accepts Nimivo job at 3 PM
 Provider also has offline job scheduled at 3 PM
 Provider is double-booked
-Provider cancels FastPays job last-minute
+Provider cancels Nimivo job last-minute
 Provider loses reputation (2+ cancellations/month = reputation penalty)
 ```
 
@@ -1103,7 +1103,7 @@ Customer doesn't book
 Week 1: ₹5,000 earnings
 Week 2: ₹500 earnings
 Boom/bust cycle makes income unreliable
-Provider can't commit to FastPays full-time
+Provider can't commit to Nimivo full-time
 Goes back to offline work
 ```
 
@@ -1119,7 +1119,7 @@ Goes back to offline work
    Platform advances ₹3,000 to make up difference
 
 3. Partner with Fintech
-   Use FastPays income history as credit score
+   Use Nimivo income history as credit score
    Provider can get micro-loans at 12-15% APR (instead of typical 36%+)
 ```
 
@@ -1382,7 +1382,7 @@ No one responds to SOS
 
 2. Partner with Repair Shops
    They have after-hours teams
-   List them on FastPays for emergency calls
+   List them on Nimivo for emergency calls
 
 3. Set Expectations
    Show customer: "Response may be slower"
@@ -1488,7 +1488,7 @@ Money loses motivation to work
 
 ```
 1. Partner with Parts Suppliers
-   Negotiate bulk pricing for FastPays providers
+   Negotiate bulk pricing for Nimivo providers
 
 2. Supplier Directory
    Show providers where to buy cheapest authentic parts
@@ -1581,7 +1581,7 @@ You'll go broke if only ad acquisition
 
 ```
 1. Provider-Shared Profiles (CAC = ₹0)
-   Providers share: fastpays.in/pro/rajesh-plumber
+   Providers share: nimivo.in/pro/rajesh-plumber
    On WhatsApp, business cards, notice boards
 
 2. Neighborhood Virality (Very low CAC)
@@ -1622,7 +1622,7 @@ Burnout, leave platform
    Free sessions for providers
 
 4. Community Meetups
-   Quarterly provider meetups (FastPays sponsors food/drinks)
+   Quarterly provider meetups (Nimivo sponsors food/drinks)
 ```
 
 ---

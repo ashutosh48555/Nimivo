@@ -1,8 +1,8 @@
-# FastPays: Complete Workflow Diagrams
+# Nimivo: Complete Workflow Diagrams
 
 > **Visual Reference for All System Flows**  
 > Last Updated: 17 February 2026  
-> Purpose: Visualize every critical process in FastPays platform
+> Purpose: Visualize every critical process in Nimivo platform
 
 ---
 
@@ -97,7 +97,7 @@ flowchart LR
 
 ```mermaid
 flowchart TD
-    Start([Provider hears about FastPays]) --> Download[Downloads app]
+    Start([Provider hears about Nimivo]) --> Download[Downloads app]
     Download --> SignUp[Sign up with phone number]
     SignUp --> OTP[OTP verification]
     OTP --> Identity[Upload Aadhaar for verification]
@@ -137,7 +137,7 @@ flowchart TD
 ```mermaid
 sequenceDiagram
     participant P as Provider
-    participant App as FastPays App
+    participant App as Nimivo App
     participant Socket as Real-Time Server
     participant C as Customer
 
@@ -417,7 +417,7 @@ stateDiagram-v2
 ```mermaid
 pie title Revenue Distribution per ₹500 Booking
     "Provider Earning" : 465
-    "Platform Fee (FastPays)" : 25
+    "Platform Fee (Nimivo)" : 25
     "Razorpay Payment Gateway" : 10
 ```
 
@@ -425,7 +425,7 @@ pie title Revenue Distribution per ₹500 Booking
 
 ```mermaid
 flowchart TD
-    Provider[Provider joins FastPays] --> Choose{Choose pricing model}
+    Provider[Provider joins Nimivo] --> Choose{Choose pricing model}
     
     Choose -->|Free Tier| Free[₹49 per bid opportunity]
     Choose -->|Pro Tier| Pro[₹599/month subscription]

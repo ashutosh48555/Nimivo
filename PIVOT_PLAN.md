@@ -1,8 +1,8 @@
-# FastPays — Product Pivot Plan: From UC Clone to Provider-First Marketplace
+# Nimivo — Product Pivot Plan: From UC Clone to Provider-First Marketplace
 
 > **Status:** Pre-Seed Product  
 > **Last Updated:** 14 February 2026  
-> **Purpose:** Complete product strategy, architecture, and implementation plan to transform FastPays from an Urban Company clone into a fundamentally different, VC-fundable home services platform.
+> **Purpose:** Complete product strategy, architecture, and implementation plan to transform Nimivo from an Urban Company clone into a fundamentally different, VC-fundable home services platform.
 
 ---
 
@@ -40,7 +40,7 @@
 
 ### The Problem With Our Current Product
 
-Our current FastPays is structurally identical to Urban Company:
+Our current Nimivo is structurally identical to Urban Company:
 
 | Dimension | Our Current App | Urban Company |
 |---|---|---|
@@ -123,11 +123,11 @@ The market is massive and almost entirely undigitized because:
 
 > **Urban Company treats providers as disposable gig workers who execute platform-controlled tasks at platform-controlled prices.**
 >
-> **FastPays treats providers as independent professionals who run their own businesses, set their own prices, build their own brand, and choose their own customers.**
+> **Nimivo treats providers as independent professionals who run their own businesses, set their own prices, build their own brand, and choose their own customers.**
 
 ### Feature-by-Feature Comparison
 
-| Dimension | Urban Company | FastPays |
+| Dimension | Urban Company | Nimivo |
 |---|---|---|
 | **Who sets the price** | Platform dictates fixed prices | Provider sets their own price via competitive bidding |
 | **Who chooses the provider** | Platform auto-assigns (customer has no choice) | Customer picks from competing bids based on price, rating, portfolio, ETA |
@@ -202,7 +202,7 @@ The market is massive and almost entirely undigitized because:
 
 ### 5.1 Real-Time Bidding System (THE Core Differentiator)
 
-**This is the #1 thing that makes FastPays not Urban Company.** Everything else is secondary.
+**This is the #1 thing that makes Nimivo not Urban Company.** Everything else is secondary.
 
 #### How It Works
 
@@ -232,7 +232,7 @@ Provider Flow:
 #### Why This Isn't Just a Feature — It's a Different Market Mechanism
 
 - **UC model:** Platform is the middleman that controls both sides. Price is fixed. Provider is assigned. Neither party has choice.
-- **FastPays model:** Platform is a marketplace that connects both sides. Price is discovered through competition. Customer chooses. Provider competes on quality + price.
+- **Nimivo model:** Platform is a marketplace that connects both sides. Price is discovered through competition. Customer chooses. Provider competes on quality + price.
 
 This is the exact model that made Thumbtack worth $3.2 billion. It does not exist in India.
 
@@ -310,7 +310,7 @@ Server → Providers:  'booking:closed'          -- Job is no longer accepting b
 
 #### d) Shareable Provider Profile
 
-- Public URL: `fastpays.in/pro/rajesh-kumar-plumber-koramangala`
+- Public URL: `nimivo.in/pro/rajesh-kumar-plumber-koramangala`
 - Shows: name, photo, rating, jobs completed, service categories, portfolio (before/after photos), reviews, "Book This Provider" button
 - Provider shares this link on WhatsApp, business cards, apartment notice boards
 - This brings NEW customers to the platform organically (reduces our CAC)
@@ -509,7 +509,7 @@ Red-themed tracking page with countdown
 
 #### Key Differences From UC's "Insta Help"
 
-| UC "Insta Help" | FastPays SOS |
+| UC "Insta Help" | Nimivo SOS |
 |---|---|
 | ₹49 flat rate (unclear how sustainable) | Transparent surge pricing (1.5x-2x, clearly shown before confirmation) |
 | No clarity on provider availability | Provider must accept within 60 seconds or it cascades |
@@ -610,7 +610,7 @@ No platform has captured this social trust layer. A provider rated 4.5 by strang
 
 #### How It Works
 
-1. FastPays groups users by locality (pincode or micro-area)
+1. Nimivo groups users by locality (pincode or micro-area)
 2. On the homepage and bid selection page, customers see:
    - "Popular in Koramangala: Deep Cleaning (23 bookings this week)"
    - "Rajesh Plumber — booked by 8 people in your building this month"
@@ -693,7 +693,7 @@ These items currently exist in the codebase and MUST be removed or replaced. The
 
 **The Problem:**
 - Frontend uses **Clerk** (`@clerk/clerk-react`) for login/signup
-- Backend uses **custom JWT** (`jsonwebtoken` + `bcrypt`) with secret `'fastpays-dev-secret-change-in-production'`
+- Backend uses **custom JWT** (`jsonwebtoken` + `bcrypt`) with secret `'nimivo-dev-secret-change-in-production'`
 - Clerk issues JWTs signed with Clerk's keys. Backend verifies with a different custom secret.
 - **Every authenticated API call will return 401 Unauthorized.**
 
@@ -1104,7 +1104,7 @@ io.use((socket, next) => {
 
 ### Why This Is Better Than UC's Economics
 
-| Metric | Urban Company | FastPays |
+| Metric | Urban Company | Nimivo |
 |---|---|---|
 | Revenue per booking | ₹150-300 (25-30% commission) | ₹40-50 (lead fee) + subscription amortized |
 | Provider CAC | ₹5,000-10,000 (training, equipment) | ₹100-200 (zero onboarding cost) |
@@ -1122,7 +1122,7 @@ io.use((socket, next) => {
 >
 > **Insight:** The US home services market solved this differently. Thumbtack ($3.2B) lets providers compete on price. Housecall Pro gives providers business tools. Neither model exists in India.
 >
-> **Solution:** FastPays is a provider-first home services marketplace. Three key differences:
+> **Solution:** Nimivo is a provider-first home services marketplace. Three key differences:
 >
 > 1. **Providers bid competitively on jobs** — customers post a request, providers send their price and ETA. Customer picks the best offer. This creates market-driven pricing, not platform-dictated pricing.
 >
@@ -1157,7 +1157,7 @@ io.use((socket, next) => {
 > Zero upfront cost is our hook. Any skilled service provider can join, list their services, and start bidding immediately. No ₹1L training fee. No forced product purchases. Word of mouth among providers is our primary acquisition channel — providers who earn more tell other providers.
 
 **Q: How do you acquire customers?**
-> Two organic channels: (1) Provider-shared profiles — every provider has a public profile link they share on WhatsApp, business cards, and apartment notice boards. This brings customers directly to our platform. (2) Neighborhood network effects — when 10 people in a building use FastPays, the 11th person sees "popular in your area" and converts.
+> Two organic channels: (1) Provider-shared profiles — every provider has a public profile link they share on WhatsApp, business cards, and apartment notice boards. This brings customers directly to our platform. (2) Neighborhood network effects — when 10 people in a building use Nimivo, the 11th person sees "popular in your area" and converts.
 
 ---
 
@@ -1167,7 +1167,7 @@ io.use((socket, next) => {
                           Provider Autonomy
                     LOW ◄────────────────────► HIGH
                     │                              │
-         HIGH      │  Urban Company    │  FastPays │
+         HIGH      │  Urban Company    │  Nimivo │
     Platform       │  Blinkit Home     │  (target  │
     Control        │  Snabbit          │   position)│
                     │                  │            │
@@ -1217,7 +1217,7 @@ We compete DIFFERENTLY from all of the above:
 **Demand side (customers):**
 1. Target 2-3 apartment complexes in Koramangala
 2. Offer first booking free (platform absorbs lead fee)
-3. Apartment WhatsApp group outreach: "Your neighbors are already using FastPays. 8 people in your building booked cleaning last week."
+3. Apartment WhatsApp group outreach: "Your neighbors are already using Nimivo. 8 people in your building booked cleaning last week."
 4. After first booking, prompt: "Save your provider → share with neighbors"
 
 **Success metric:** 100 bookings in month 3 with 60%+ customer return rate
@@ -1384,7 +1384,7 @@ We compete DIFFERENTLY from all of the above:
 
 ---
 
-## Appendix A: What FastPays Is NOT
+## Appendix A: What Nimivo Is NOT
 
 To be crystal clear with investors, customers, and ourselves:
 
@@ -1424,6 +1424,6 @@ To be crystal clear with investors, customers, and ourselves:
 
 ---
 
-*This document is the single source of truth for FastPays product direction. Every feature, every implementation decision, and every line of code should trace back to one question: "Does this empower the provider and give the customer choice?"*
+*This document is the single source of truth for Nimivo product direction. Every feature, every implementation decision, and every line of code should trace back to one question: "Does this empower the provider and give the customer choice?"*
 
 *If the answer is no, we're building Urban Company. And that's already been built.*

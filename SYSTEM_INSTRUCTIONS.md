@@ -1,6 +1,6 @@
-# FastPAYS — System Instructions for AI Builders
+# Nimivo — System Instructions for AI Builders
 
-> **This document is the single source of truth.** Any AI agent, developer, or tool building FastPAYS must follow these instructions exactly. Read this entire file before writing a single line of code.
+> **This document is the single source of truth.** Any AI agent, developer, or tool building Nimivo must follow these instructions exactly. Read this entire file before writing a single line of code.
 
 ---
 
@@ -8,7 +8,7 @@
 
 | Field | Value |
 |---|---|
-| **Name** | FastPAYS |
+| **Name** | Nimivo |
 | **Tagline** | "Get Professional Help Within 15 Minutes" |
 | **UVP** | Lightning-fast home services with guaranteed arrival in 15 minutes |
 | **Brand Positioning** | Fast + Professional + At Your Service |
@@ -466,7 +466,7 @@ Phase 4: ADMIN PANEL     (Hour 15)       ← Basic monitoring only
 
 ## 14. CRITICAL DESIGN MANDATE — DO NOT MAKE AN AI-LOOKING WEBSITE
 
-> **The #1 design requirement is that FastPAYS must NOT look like a typical AI-generated website.** Follow the design patterns from https://home.utilita.co.uk/ (Utilita Home).
+> **The #1 design requirement is that Nimivo must NOT look like a typical AI-generated website.** Follow the design patterns from https://home.utilita.co.uk/ (Utilita Home).
 
 ### What Makes a Website Look AI-Generated (AVOID ALL OF THESE):
 - Perfectly symmetric 3-column card grids with identical padding
@@ -521,7 +521,7 @@ Phase 4: ADMIN PANEL     (Hour 15)       ← Basic monitoring only
 - [ ] Lighthouse score > 80
 
 ### 5-Minute Demo Script:
-1. (0-1 min) Intro — "FastPAYS: Professional help within 15 minutes"
+1. (0-1 min) Intro — "Nimivo: Professional help within 15 minutes"
 2. (1-2 min) Register + browse services + select "Deep Cleaning"
 3. (2-3 min) Enter address → "Book Now" → booking created in < 2 seconds → provider auto-assigned → ETA shown
 4. (3-4 min) Show live tracking — ETA countdown, provider location on map, status timeline

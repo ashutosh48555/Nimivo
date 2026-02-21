@@ -7,8 +7,8 @@ This project uses a **fork-based collaboration workflow**.
 ### Remote Configuration
 
 ```
-origin   → https://github.com/ashutosh48555/FastPays.git (your fork)
-upstream → https://github.com/Pankaj-Bashera/FastPays.git (original repo)
+origin   → https://github.com/ashutosh48555/Nimivo.git (your fork)
+upstream → https://github.com/Pankaj-Bashera/Nimivo.git (original repo)
 ```
 
 ### Commands to Verify Setup
@@ -18,10 +18,10 @@ git remote -v
 
 Should output:
 ```
-origin    https://github.com/ashutosh48555/FastPays.git (fetch)
-origin    https://github.com/ashutosh48555/FastPays.git (push)
-upstream  https://github.com/Pankaj-Bashera/FastPays.git (fetch)
-upstream  https://github.com/Pankaj-Bashera/FastPays.git (push)
+origin    https://github.com/ashutosh48555/Nimivo.git (fetch)
+origin    https://github.com/ashutosh48555/Nimivo.git (push)
+upstream  https://github.com/Pankaj-Bashera/Nimivo.git (fetch)
+upstream  https://github.com/Pankaj-Bashera/Nimivo.git (push)
 ```
 
 ## Workflow Guide
@@ -46,9 +46,9 @@ git push origin feature/your-feature-name
 ```
 
 ### 3. Create a Pull Request
-- Go to https://github.com/ashutosh48555/FastPays
+- Go to https://github.com/ashutosh48555/Nimivo
 - GitHub will prompt you to create a PR to the original repo
-- Create PR from your fork → `Pankaj-Bashera/FastPays`
+- Create PR from your fork → `Pankaj-Bashera/Nimivo`
 
 ### 4. Sync with Original Repo
 ```bash

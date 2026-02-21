@@ -70,7 +70,7 @@ function FormPanel({ isProvider, role }: { isProvider: boolean; role: string }) 
         </motion.h1>
         <motion.p className="text-sm text-slate-500 mb-8" variants={fadeUp}>
           {isProvider
-            ? 'Fill in your details to join the FastPAYS provider network'
+            ? 'Fill in your details to join the Nimivo provider network'
             : 'Get started for free — no credit card required'}
         </motion.p>
 
@@ -203,11 +203,11 @@ function VisualPanel({ isProvider, role }: { isProvider: boolean; role: string }
           }`}
           variants={fadeUp}
         >
-          <img src="/logo.png" alt="FastPAYS" className="w-14 h-14 object-contain drop-shadow-lg" />
+          <img src="/logo.png" alt="Nimivo" className="w-14 h-14 object-contain drop-shadow-lg" />
         </motion.div>
 
         <motion.h2 className="text-3xl font-bold text-white font-heading mb-3" variants={fadeUp}>
-          {isProvider ? 'Start earning with FastPAYS' : 'Join FastPAYS today'}
+          {isProvider ? 'Start earning with Nimivo' : 'Join Nimivo today'}
         </motion.h2>
         <motion.p className="text-white/75 max-w-sm mx-auto mb-8" variants={fadeUp}>
           {isProvider
@@ -250,7 +250,7 @@ function VisualPanel({ isProvider, role }: { isProvider: boolean; role: string }
           variants={fadeUp}
         >
           <CheckCircle className="w-3.5 h-3.5" />
-          {isProvider ? '10,000+ active providers across India' : '50,000+ happy customers trust FastPAYS'}
+          {isProvider ? '10,000+ active providers across India' : '50,000+ happy customers trust Nimivo'}
         </motion.div>
       </motion.div>
     </motion.div>

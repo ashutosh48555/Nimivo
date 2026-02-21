@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <SectionLabel label="Why FastPAYS" />
+          <SectionLabel label="Why Nimivo" />
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-slate-900">
             Built for speed, trust & convenience
           </h2>

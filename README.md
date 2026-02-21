@@ -1,6 +1,6 @@
-# 🏛️ CraftGuild — India's Guild of Home Professionals
+# 🏛️ Nimivo — India's Guild of Home Professionals
 
-CraftGuild is India's first **provider-first home services marketplace** where customers post jobs, verified professionals bid competitively, and the customer picks the best offer.
+Nimivo is India's first **provider-first home services marketplace** where customers post jobs, verified professionals bid competitively, and the customer picks the best offer.
 
 Built with production-grade scalability and real-time bidding in mind.
 
@@ -15,7 +15,7 @@ Traditional service booking platforms operate on scheduled slots and lack real-t
 - No real-time tracking
 - No transparent ETA
 
-CraftGuild solves this by implementing a **Competitive Bidding System** where verified providers compete for each job, giving customers choice, fair pricing, and quality accountability.
+Nimivo solves this by implementing a **Competitive Bidding System** where verified providers compete for each job, giving customers choice, fair pricing, and quality accountability.
 
 ---
 

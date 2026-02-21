@@ -20,11 +20,11 @@ export default function AccessPage() {
         <Link to="/" className="inline-flex items-center gap-2 group">
           <img
             src="/logo.png"
-            alt="FastPAYS"
+            alt="Nimivo"
             className="w-10 h-10 rounded-xl object-contain group-hover:scale-105 transition-transform"
           />
           <span className="text-2xl font-bold text-fp-blue-900 font-heading tracking-tight">
-            Fast<span className="text-fp-orange-500">PAYS</span>
+            Nimi<span className="text-fp-orange-500">vo</span>
           </span>
         </Link>
       </div>

@@ -72,7 +72,7 @@ const CATEGORY_DETAILS: Record<string, {
 /* ── Fake reviews ─────────────────────────────────── */
 const REVIEWS = [
   { name: 'Priya S.', rating: 5, text: 'Professional arrived in 12 minutes. Excellent work, very polite. Will book again!', date: '2 days ago' },
-  { name: 'Rahul M.', rating: 5, text: 'Best service experience ever. Clean, fast, and affordable. Highly recommend FastPAYS.', date: '5 days ago' },
+  { name: 'Rahul M.', rating: 5, text: 'Best service experience ever. Clean, fast, and affordable. Highly recommend Nimivo.', date: '5 days ago' },
   { name: 'Ananya K.', rating: 4, text: 'Good service overall. The provider was skilled and completed the job on time.', date: '1 week ago' },
 ];
 

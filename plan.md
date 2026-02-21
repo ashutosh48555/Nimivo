@@ -1,4 +1,4 @@
-# FastPays: Complete Execution Plan & Roadmap
+# Nimivo: Complete Execution Plan & Roadmap
 
 > **Master Document for Product Development & Launch**  
 > Last Updated: 17 February 2026  
@@ -57,12 +57,12 @@ Providers hate UC. Customers don't trust UC. Yet no alternative exists.
 
 ### The Solution
 
-**FastPays** = India's first **provider-first marketplace** with competitive bidding.
+**Nimivo** = India's first **provider-first marketplace** with competitive bidding.
 
 ```
 How We're Different:
 
-UC Model:                    FastPays Model:
+UC Model:                    Nimivo Model:
 ━━━━━━━━━━━━━━━━━━━━━━━━    ━━━━━━━━━━━━━━━━━━━━━━━━
 Platform sets price          Provider sets price (competitive bidding)
 Platform assigns provider    Customer picks provider from bids
@@ -88,7 +88,7 @@ Off-platform = lose ₹125    Off-platform = lose ₹39 (not worth it)
 Year 1-2:  Marketplace (providers bid, customers pick)
 Year 3-5:  Platform (add fintech, insurance, training)
 Year 5-10: Operating System (every service professional in India runs 
-           their business on FastPays — invoicing, bookings, loans, 
+           their business on Nimivo — invoicing, bookings, loans, 
            inventory, training)
 
 The goal: Become the "Shopify for India's 50 million service professionals"
@@ -231,9 +231,9 @@ You're not just better execution. You're a **different business model.**
 ### 4. Provider Incentives Align
 
 ```
-Why providers will switch from UC to FastPays:
+Why providers will switch from UC to Nimivo:
 
-UC extracts value:            FastPays creates value:
+UC extracts value:            Nimivo creates value:
 ━━━━━━━━━━━━━━━━━            ━━━━━━━━━━━━━━━━━━━━━━
 ₹1L upfront training cost     ₹0 upfront cost
 25-30% per job                ₹39/lead or ₹0 (subscription)
@@ -242,7 +242,7 @@ No tools                      Invoicing, CRM, analytics
 Customer relationship lost    Customer becomes "my customer"
 Off-platform savings: ₹125    Off-platform savings: ₹39 (not worth it)
 
-Decision: Provider switches, then LOCKS IN (portfolio, reviews, tools are all on FastPays)
+Decision: Provider switches, then LOCKS IN (portfolio, reviews, tools are all on Nimivo)
 ```
 
 ### 5. You Already Have 80% of the Code
@@ -441,7 +441,7 @@ Day 35: Public Provider Profile
   Component: PublicProviderPage.tsx
   □ Shows: Name, photo, rating, portfolio, reviews
   □ "Book This Provider" button
-  □ Provider shares: fastpays.in/pro/rajesh-plumber
+  □ Provider shares: nimivo.in/pro/rajesh-plumber
 ```
 
 #### Week 8: Beta Launch Prep
@@ -566,7 +566,7 @@ Week 23-24: Polish & Performance
 ```mermaid
 sequenceDiagram
     participant C as Customer
-    participant App as FastPays App
+    participant App as Nimivo App
     participant DB as Database
     participant Socket as Socket.IO
     participant P as Provider
@@ -992,7 +992,7 @@ Needs (by Month 3):
 | **Cloudinary** (Images) | ₹0 (Free) → ₹3,000 at scale | Image storage |
 | **Razorpay** | 2% per transaction | Payment gateway |
 | **Exotel** (Phone masking) | ₹0.50-1/min | Masked calls |
-| **Domain** | ₹800/year | fastpays.in |
+| **Domain** | ₹800/year | nimivo.in |
 | **SSL** | ₹0 (Let's Encrypt) | HTTPS |
 | **Monitoring** | ₹0 (PostHog free tier) | Analytics |
 | **Total (MVP)** | **₹2,000-5,000/month** | Full tech stack |
@@ -1025,7 +1025,7 @@ Provider Recruitment:
 Customer Acquisition:
   1. Friends & family (first 10 customers)
   2. Apartment notice boards
-  3. WhatsApp status: "Need an electrician? Try FastPays"
+  3. WhatsApp status: "Need an electrician? Try Nimivo"
   4. Word of mouth: "12 people in your building used us"
 
 Goal: 50 providers, 100 bookings in first 60 days
@@ -1165,7 +1165,7 @@ Impact: HIGH
 Mitigation:
   ✅ UC's revenue model depends on control (hard to switch)
   ✅ Build data moat: symptom trees, price catalog, skill profiles
-  ✅ Provider lock-in: portfolios, reviews, tools all on FastPays
+  ✅ Provider lock-in: portfolios, reviews, tools all on Nimivo
   ✅ Speed: Ship in 6 months, they need 12-18 months to pivot
 ```
 
@@ -1268,7 +1268,7 @@ Net Profit:              ₹42,360/month
 Profit Margin:           74%
 ```
 
-**Conclusion:** Even at low volume (1,000 bookings/month), FastPays is profitable.
+**Conclusion:** Even at low volume (1,000 bookings/month), Nimivo is profitable.
 
 ---
 

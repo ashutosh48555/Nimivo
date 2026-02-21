@@ -19,8 +19,8 @@ export default function ProviderLayout() {
             <aside className="hidden md:flex flex-col w-64 bg-fp-blue-900 text-white fixed h-full z-30">
                 <div className="p-6 border-b border-fp-blue-700">
                     <Link to="/" className="flex items-center gap-2">
-                        <img src="/logo.png" alt="FastPAYS" className="w-8 h-8 rounded-lg object-contain" />
-                        <h1 className="text-2xl font-bold font-heading">FastPAYS <span className="text-fp-orange-500 text-xs uppercase tracking-wide">Partner</span></h1>
+                        <img src="/logo.png" alt="Nimivo" className="w-8 h-8 rounded-lg object-contain" />
+                        <h1 className="text-2xl font-bold font-heading">Nimivo <span className="text-fp-orange-500 text-xs uppercase tracking-wide">Partner</span></h1>
                     </Link>
                 </div>
 
@@ -53,8 +53,8 @@ export default function ProviderLayout() {
                 {/* Mobile Header */}
                 <header className="md:hidden h-16 bg-fp-blue-900 text-white flex items-center justify-between px-4 sticky top-0 z-40">
                     <Link to="/" className="flex items-center gap-2">
-                        <img src="/logo.png" alt="FastPAYS" className="w-7 h-7 rounded-lg object-contain" />
-                        <h1 className="text-xl font-bold font-heading">FastPAYS</h1>
+                        <img src="/logo.png" alt="Nimivo" className="w-7 h-7 rounded-lg object-contain" />
+                        <h1 className="text-xl font-bold font-heading">Nimivo</h1>
                     </Link>
                     <button onClick={() => setSidebarOpen(!sidebarOpen)}>
                         {sidebarOpen ? <X /> : <Menu />}

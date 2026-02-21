@@ -1,6 +1,6 @@
-# FastPAYS — Design Reference Bible (Premium Edition)
+# Nimivo — Design Reference Bible (Premium Edition)
 
-> **Every page, component, and pixel decision must follow this file.** This ensures FastPAYS looks like a $10k+ custom-built product.
+> **Every page, component, and pixel decision must follow this file.** This ensures Nimivo looks like a $10k+ custom-built product.
 
 ---
 

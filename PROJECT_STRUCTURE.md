@@ -1,13 +1,13 @@
-# FastPAYS — Project Structure Reference
+# Nimivo — Project Structure Reference
 
-> Complete folder structure, file descriptions, environment setup, and infrastructure reference for the FastPAYS project.
+> Complete folder structure, file descriptions, environment setup, and infrastructure reference for the Nimivo project.
 
 ---
 
 ## 1. REPOSITORY LAYOUT
 
 ```
-FastPays/
+Nimivo/
 │
 ├── SYSTEM_INSTRUCTIONS.md          # AI builder master reference
 ├── DESIGN_REFERENCE.md             # Design bible (colors, layout, components)
@@ -205,7 +205,7 @@ FastPays/
 ### `.env.example`
 ```env
 # ═══════════════════════════════════════════
-# FastPAYS Environment Configuration
+# Nimivo Environment Configuration
 # Copy this file to .env and fill in values
 # ═══════════════════════════════════════════
 
@@ -215,7 +215,7 @@ PORT=5000
 FRONTEND_URL=http://localhost:5173
 
 # ── Database (PostgreSQL) ──────────────────
-DATABASE_URL=postgresql://admin:password@localhost:5432/fastpays
+DATABASE_URL=postgresql://admin:password@localhost:5432/nimivo
 
 # ── Redis ──────────────────────────────────
 REDIS_URL=redis://localhost:6379
@@ -236,7 +236,7 @@ TWILIO_PHONE_NUMBER=+1...
 
 # ── SendGrid (Email) ──────────────────────
 SENDGRID_API_KEY=SG...
-SENDGRID_FROM_EMAIL=noreply@fastpays.in
+SENDGRID_FROM_EMAIL=noreply@nimivo.in
 
 # ── Cloudinary (File Upload) ──────────────
 CLOUDINARY_CLOUD_NAME=...
@@ -256,7 +256,7 @@ VITE_GOOGLE_MAPS_API_KEY=AIza...
 ### Root `package.json`
 ```json
 {
-  "name": "fastpays",
+  "name": "nimivo",
   "version": "1.0.0",
   "private": true,
   "workspaces": ["frontend", "backend"],
@@ -315,9 +315,9 @@ version: '3.8'
 services:
   postgres:
     image: postgres:16-alpine
-    container_name: fastpays-db
+    container_name: nimivo-db
     environment:
-      POSTGRES_DB: fastpays
+      POSTGRES_DB: nimivo
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: password
     ports:
@@ -325,14 +325,14 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U admin -d fastpays"]
+      test: ["CMD-SHELL", "pg_isready -U admin -d nimivo"]
       interval: 5s
       timeout: 5s
       retries: 5
 
   redis:
     image: redis:7-alpine
-    container_name: fastpays-redis
+    container_name: nimivo-redis
     ports:
       - "6379:6379"
     volumes:
@@ -442,8 +442,8 @@ drizzle-kit               — Migration tool
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/Pankaj-Bashera/FastPays.git
-cd FastPays
+git clone https://github.com/Pankaj-Bashera/Nimivo.git
+cd Nimivo
 
 # 2. Start local databases
 docker-compose up -d

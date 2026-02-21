@@ -24,7 +24,7 @@ export default function CTABanner() {
         </h2>
 
         <p className="mt-4 text-slate-300 max-w-xl mx-auto">
-          Join thousands of happy customers who rely on FastPAYS for quick,
+          Join thousands of happy customers who rely on Nimivo for quick,
           reliable home services. No subscription, no commitment — just fast help.
         </p>
 

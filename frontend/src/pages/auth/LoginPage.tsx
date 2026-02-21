@@ -170,11 +170,11 @@ function VisualPanel({ isProvider, role }: { isProvider: boolean; role: string }
           }`}
           variants={fadeUp}
         >
-          <img src="/logo.png" alt="FastPAYS" className="w-14 h-14 object-contain drop-shadow-lg" />
+          <img src="/logo.png" alt="Nimivo" className="w-14 h-14 object-contain drop-shadow-lg" />
         </motion.div>
 
         <motion.h2 className="text-3xl font-bold text-white font-heading mb-3" variants={fadeUp}>
-          {isProvider ? 'Grow your business with FastPAYS' : 'Professional help in minutes'}
+          {isProvider ? 'Grow your business with Nimivo' : 'Professional help in minutes'}
         </motion.h2>
         <motion.p className="text-white/75 max-w-sm mx-auto mb-8" variants={fadeUp}>
           {isProvider

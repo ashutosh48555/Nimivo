@@ -100,7 +100,7 @@ export const MOCK_TESTIMONIALS = [
     name: 'Priya Sharma',
     city: 'Mumbai',
     rating: 5,
-    text: 'CraftGuild saved my weekend! The plumber arrived in 11 minutes and fixed my leak in no time. Incredible service.',
+    text: 'Nimivo saved my weekend! The plumber arrived in 11 minutes and fixed my leak in no time. Incredible service.',
     avatar: '',
   },
   {
@@ -192,7 +192,7 @@ export const FAQ_ITEMS = [
       'We guarantee arrival within 15 minutes of booking confirmation. Our smart dispatch system finds the nearest available verified professional and assigns them to your booking instantly.',
   },
   {
-    question: 'What services does CraftGuild offer?',
+    question: 'What services does Nimivo offer?',
     answer:
       'We offer 6 core services: Deep Cleaning (₹499), Plumbing (₹349), Electrician (₹399), Carpentry (₹599), Painting (₹799), and Salon at Home (₹449). Each service is performed by verified professionals.',
   },
