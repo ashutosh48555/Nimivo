@@ -137,11 +137,10 @@ Geo-location stored using PostGIS `GEOGRAPHY(Point)` type.
 
 ---
 
-## COnnect with us on
+## Connect with us on
 
-## 🌐 Social Media
-
-[![Website](https://img.shields.io/badge/Website-nimivo.com-blue?style=for-the-badge\&logo=google-chrome)](https://nimivo.com)
+[![Website](https://img.shields.io/badge/Website-nimivo.com-orange?style=for-the-badge\&logo=google-chrome)](https://nimivo.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-@nimivo-0A66C2?style=for-the-badge\&logo=linkedin)](www.linkedin.com/in/nimivo)
 [![Twitter](https://img.shields.io/badge/X-@nimivo-black?style=for-the-badge\&logo=x)](https://x.com/nimivo_official)
+[![YouTube](https://img.shields.io/badge/YouTube-@nimivo-DC382D?style=for-the-badge\&logo=YouTube)]([https://x.com/nimivo_official](https://www.youtube.com/@Nimivo_official))
 [![Instagram](https://img.shields.io/badge/Instagram-@nimivo-E4405F?style=for-the-badge\&logo=instagram\&logoColor=white)](https://www.instagram.com/nimivo_official)
